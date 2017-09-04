@@ -1,0 +1,464 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_navi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/map_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:orientation="horizontal">
+
+
+        <com.letv.leauto.ecolink.ui.view.BackView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_40dp" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/size_15dp"
+            android:layout_weight="4"
+            android:background="@color/transparent_5"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:src="@mipmap/map_ic_search" />
+
+            <EditText
+                android:id="@+id/map_search_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/img_delete"
+                android:layout_toRightOf="@id/img_search"
+                android:background="@null"
+                android:dropDownVerticalOffset="@dimen/size_20dp"
+                android:dropDownWidth="fill_parent"
+                android:focusable="true"
+                android:hint="@string/map_navi_destination"
+                android:imeOptions="flagNoExtractUi"
+                android:maxLines="1"
+                android:textColor="@color/half_white"
+                android:textColorHint="@color/half_white"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/size_12sp" />
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_15dp"
+                android:src="@mipmap/search_cancel" />
+
+            <ProgressBar
+                android:id="@+id/search_progress"
+                style="@style/widget_waiting_dialog"
+                android:layout_width="@dimen/size_22dp"
+                android:layout_height="@dimen/size_22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_15dp"
+                android:indeterminateDuration="2000"></ProgressBar>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+
+
+        android:layout_below="@+id/map_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/favor_poi_layout">
+        <LinearLayout
+            android:id="@+id/home_company_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rlt_home"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/size_64dp"
+                android:background="@drawable/button_rantage_2_selector"
+                android:focusable="true"
+                android:gravity="center"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/size_16dp"
+                    android:id="@+id/home_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/map_ic_home" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/home_image"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tv_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/map_home"
+                        android:textColor="@color/transparent_60"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:id="@+id/home_describe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/map_home"
+                        android:textColor="@color/transparent_60"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="1px"
+                android:layout_height="@dimen/size_50dp"
+                android:orientation="vertical"
+
+                android:background="@color/transparent_30"></LinearLayout>
+            <RelativeLayout
+                android:id="@+id/company_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/size_64dp"
+                android:background="@drawable/button_rantage_2_selector"
+                android:focusable="true"
+                android:gravity="center"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/size_16dp"
+                    android:id="@+id/company_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/map_ic_company" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/company_image"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/company_image"
+                        android:text="@string/map_work"
+                        android:textColor="@color/transparent_60"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/company_describe"
+                        android:text="在公司附近"
+                        android:textColor="@color/transparent_60"
+                        android:textSize="12sp"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/poi_layout"
+            android:layout_below="@+id/home_company_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_weight="4"
+            android:background="@color/transparent_5"
+            android:focusableInTouchMode="false"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/parking_lots_lyt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="@dimen/size_80dp"
+                    android:layout_height="@dimen/size_80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_rantage_4_selector"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_parking_lots"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:src="@mipmap/map_to_carpark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_parking_lots"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/size_10dp"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:text="停车场"
+                        android:textColor="@color/transparent_60"
+                        android:textSize="@dimen/textsize_16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/gas_station_lyt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="@dimen/size_80dp"
+                    android:layout_height="@dimen/size_80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_rantage_4_selector"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_gas_station"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:src="@mipmap/map_to_oil" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_gas_station"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/size_10dp"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:text="加油站"
+                        android:textColor="@color/transparent_60"
+                        android:textSize="@dimen/textsize_16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/toilets_lyt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="@dimen/size_80dp"
+                    android:layout_height="@dimen/size_80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_rantage_4_selector"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_toilets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:src="@mipmap/map_to_toilet" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_toilets"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/size_10dp"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:text="洗手间"
+                        android:textColor="@color/transparent_60"
+                        android:textSize="@dimen/textsize_16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/food_lyt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="@dimen/size_80dp"
+                    android:layout_height="@dimen/size_80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_rantage_4_selector"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_food"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:src="@mipmap/map_to_food" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_food"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/size_10dp"
+                        android:layout_marginTop="@dimen/size_10dp"
+                        android:text="美食"
+                        android:textColor="@color/transparent_60"
+                        android:textSize="@dimen/textsize_16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_company_layout"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="@dimen/size_10dp"
+                android:paddingLeft="@dimen/size_20dp"
+                android:paddingRight="@dimen/size_20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_20dp"
+                    android:background="@color/transparent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/home_remind"
+                        android:layout_width="@dimen/size_120dp"
+                        android:layout_height="@dimen/size_50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/company_remind"
+                        android:layout_width="@dimen/size_120dp"
+                        android:layout_height="@dimen/size_50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/favor_poi_layout"
+            android:id="@+id/lyt_history"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:background="@color/transparent_5"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/history_empty_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/map_no_history"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/history_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbarSize="@dimen/size_2dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbarThumbVertical="@color/transparent_30"
+                android:scrollbars="vertical" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+    <ListView
+
+        android:layout_below="@+id/map_title"
+        android:id="@+id/search_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:layout_marginRight="@dimen/size_10dp"
+        android:background="@color/transparent"
+        android:divider="@null"
+        android:scrollbarSize="@dimen/size_2dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@color/transparent_30"
+        android:scrollbars="vertical"
+        android:visibility="visible"/>
+
+
+
+
+</RelativeLayout>

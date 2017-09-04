@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_4dp"
+            android:layout_marginRight="@dimen/size_4dp"
+            android:background="@drawable/button_circle_selector"
+            android:scaleType="center"
+            android:src="@mipmap/back_icon" />
+
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size_5dp"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:background="@color/transparent_30" />
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="56dp"
+            android:layout_toRightOf="@id/tv_line"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="326dp"
+                android:background="@mipmap/setting_ecolink_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/size_20dp"
+                    android:text="@string/ecolink_slogan"
+                    android:textColor="@color/setting_ecolink_text"
+                    android:textSize="@dimen/ecolink_slogan" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/size_20dp"
+                android:paddingRight="@dimen/size_20dp">
+
+                <TextView
+                    android:id="@+id/feature_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/ecolink_feature_first"
+                    android:textColor="@color/setting_ecolink_text"
+                    android:textSize="@dimen/ecolink_feature" />
+
+                <TextView
+                    android:id="@+id/feature_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ecolink_feature_margin"
+                    android:layout_toRightOf="@id/feature_first"
+                    android:text="@string/ecolink_feature_second"
+                    android:textColor="@color/setting_ecolink_text"
+                    android:textSize="@dimen/ecolink_feature" />
+
+                <TextView
+                    android:id="@+id/feature_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/feature_first"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/feature_first"
+                    android:layout_marginTop="@dimen/ecolink_feature_leading"
+                    android:text="@string/ecolink_feature_third"
+                    android:textColor="@color/setting_ecolink_text"
+                    android:textSize="@dimen/ecolink_feature" />
+
+                <TextView
+                    android:id="@+id/feature_fourth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/feature_second"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/feature_second"
+                    android:layout_marginTop="@dimen/ecolink_feature_leading"
+                    android:text="@string/ecolink_feature_fourth"
+                    android:textColor="@color/setting_ecolink_text"
+                    android:textSize="@dimen/ecolink_feature" />
+
+                <TextView
+                    android:id="@+id/ecolink_vehicle_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/feature_third"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/size_16dp"
+                    android:text="@string/ecolink_vehicle_type"
+                    android:textColor="@color/setting_ecolink_type"
+                    android:textSize="@dimen/ecolink_slogan" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/feature_third"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:layout_marginTop="@dimen/size_25dp"
+                    android:layout_toLeftOf="@id/ecolink_vehicle_type"
+                    android:background="@color/setting_ecolink_type" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/feature_fourth"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:layout_marginTop="@dimen/size_25dp"
+                    android:layout_toRightOf="@id/ecolink_vehicle_type"
+                    android:background="@color/setting_ecolink_type" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/size_20dp"
+                android:paddingRight="@dimen/size_20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/vehicle_first"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="4"
+                            android:src="@mipmap/vehicle_first" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:text="@string/ecolink_vehicle_first"
+                            android:textColor="@color/setting_ecolink_type"
+                            android:textSize="@dimen/ecolink_vehicle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/vehicle_second"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="4"
+                            android:src="@mipmap/vehicle_second" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:text="@string/ecolink_vehicle_second"
+                            android:textColor="@color/setting_ecolink_type"
+                            android:textSize="@dimen/ecolink_vehicle" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/vehicle_third"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="4"
+                            android:src="@mipmap/vehicle_third" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:text="@string/ecolink_vehicle_third"
+                            android:textColor="@color/setting_ecolink_type"
+                            android:textSize="@dimen/ecolink_vehicle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/vehicle_fourth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="4"
+                            android:src="@mipmap/vehicle_fourth" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:text="@string/ecolink_vehicle_fourth"
+                            android:textColor="@color/setting_ecolink_type"
+                            android:textSize="@dimen/ecolink_vehicle" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/vehicle_fifth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="4"
+                            android:src="@mipmap/vehicle_fifth" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:text="@string/ecolink_vehicle_fifth"
+                            android:textColor="@color/setting_ecolink_type"
+                            android:textSize="@dimen/ecolink_vehicle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/vehicle_sixth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="4"
+                            android:src="@mipmap/vehicle_sixth" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:text="@string/ecolink_vehicle_sixth"
+                            android:textColor="@color/setting_ecolink_type"
+                            android:textSize="@dimen/ecolink_vehicle" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/vehicle_seventh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="4"
+                            android:src="@mipmap/vehicle_seventh" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:text="@string/ecolink_vehicle_seventh"
+                            android:textColor="@color/setting_ecolink_type"
+                            android:textSize="@dimen/ecolink_vehicle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/vehicle_eighth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="4"
+                            android:src="@mipmap/vehicle_eighth" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:text="@string/ecolink_vehicle_eighth"
+                            android:textColor="@color/setting_ecolink_type"
+                            android:textSize="@dimen/ecolink_vehicle" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="连接失败"
+        android:textColor="#0cca42"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:text="请确认网络连接后，重新连接..."
+        android:textColor="#000"
+        android:background="#fff"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:background="#ccc"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <TextView
+        android:id="@+id/affirm"
+        android:text="OK"
+        android:textSize="16sp"
+        android:textColor="#0307f7"
+        android:gravity="center"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/transparent_black_60"
+            android:textSize="@dimen/textsize_16sp" />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_marginTop="28dp"
+                android:layout_width="match_parent"
+                android:divider="@color/transparent"
+                android:listSelector="@drawable/item_gridview_selector"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:scrollbarThumbVertical="@color/transparent_30"
+                android:scrollbarSize="@dimen/size_2dp"
+                android:scrollbarStyle="outsideOverlay"></ListView>
+
+</LinearLayout>

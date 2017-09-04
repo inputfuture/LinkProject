@@ -1,0 +1,6 @@
+<resources>
+    <string name="keypad_conn_success">乐键连接成功</string>
+    <string name="keypad_status">乐键状态</string>
+    <string name="keypad_connected">乐键已连接</string>
+    <string name="keypad_disconnected">乐键已断开</string>
+</resources>

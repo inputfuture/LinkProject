@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item
+        android:drawable="@mipmap/connect_0"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_1"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_2"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_4"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_5"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_6"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_8"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_9"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_10"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_12"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_13"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_14"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_16"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_17"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_18"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_20"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_21"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_22"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_24"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_25"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_26"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_28"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_29"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_30"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_32"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_33"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_34"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_36"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_37"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_38"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_40"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_41"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_42"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_44"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_45"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_46"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_48"
+        android:duration="50" />
+    <item
+        android:drawable="@mipmap/connect_49"
+        android:duration="50" />
+</animation-list>

@@ -1,0 +1,403 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/route"
+        android:layout_width="@dimen/size_240dp"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50dp"
+            android:orientation="horizontal">
+
+            <com.letv.leauto.ecolink.ui.view.BackView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/diver"
+                android:layout_toRightOf="@+id/iv_back"
+                android:layout_width="@dimen/size_1dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:background="@color/map_route_diviver_line"></LinearLayout>
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/diver"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/from"
+                    android:text="从"
+                    android:textSize="@dimen/size_12sp"
+                    android:textColor="@color/transparent_30"/>
+                <TextView
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_point"
+                    android:text="我的位置"
+                    android:textColor="@color/transparent_60"
+                    android:textSize="@dimen/textsize_12sp" />
+                <TextView
+                    android:layout_marginTop="@dimen/size_3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/to"
+                    android:text="到"
+                    android:layout_below="@+id/from"
+                    android:textSize="@dimen/size_12sp"
+                    android:textColor="@color/transparent_30"/>
+                <TextView
+                    android:id="@+id/end_point"
+                    android:layout_toRightOf="@+id/to"
+                    android:layout_alignTop="@+id/to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_15dp"
+                    android:textSize="@dimen/size_12sp"
+                    android:textColor="@color/transparent_60"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="天安门"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:id="@+id/rl_start_nav"
+                android:layout_width="@dimen/size_200dp"
+                android:layout_height="@dimen/size_40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/size_20dp"
+                android:background="@drawable/navi_btn_bg">
+
+                <TextView
+                    android:id="@+id/tv_start_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/map_route_start_navi"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16sp" />
+
+                <TextView
+                    android:id="@+id/tv_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/tv_start_nav"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16sp" />
+
+                <CheckBox
+                    android:id="@+id/emute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/strategy_layout"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/rl_start_nav"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:id="@+id/route_linelayout_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent_10"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/route_strategy_one"
+                        android:layout_width="@dimen/size_40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_16dp"
+
+                        android:gravity="center"
+                        android:text=" 躲避拥堵 "
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_16sp" />
+
+
+                    <LinearLayout
+                        android:layout_marginRight="@dimen/size_15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+
+
+                        <TextView
+                            android:id="@+id/route_distance_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|right"
+
+                            android:layout_gravity="center"
+                            android:text="@string/str_route_km"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_12sp" />
+                        <TextView
+                            android:id="@+id/route_time_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_10dp"
+                            android:gravity="center|right"
+
+                            android:text="@string/str_route_minute"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_16sp" />
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_line_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1dp"
+                    android:background="@color/map_route_diviver_line" />
+
+
+                <LinearLayout
+                    android:id="@+id/route_linelayout_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent_5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/route_strategy_two"
+                        android:layout_width="@dimen/size_40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_16dp"
+
+                        android:gravity="center"
+                        android:text=" 距离最短 "
+                        android:textColor="@color/half_white"
+                        android:textSize="@dimen/size_16sp" />
+                    <LinearLayout
+                        android:layout_marginRight="@dimen/size_15dp"
+                        android:id="@+id/left2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/route_distance_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|right"
+                            android:layout_gravity="center"
+                            android:text="@string/str_route_km"
+                            android:textColor="@color/half_white"
+                            android:textSize="@dimen/size_12sp" />
+
+                        <TextView
+                            android:id="@+id/route_time_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="@dimen/size_10dp"
+                            android:gravity="center|right"
+                            android:text="123"
+                            android:textColor="@color/half_white"
+                            android:textSize="@dimen/size_16sp" />
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_line_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1dp"
+                    android:background="@color/map_route_diviver_line" />
+
+
+                <LinearLayout
+                    android:id="@+id/route_linelayout_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent_5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:id="@+id/route_strategy_three"
+                        android:layout_width="@dimen/size_40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_16dp"
+                        android:gravity="center"
+                        android:text=" 不走高速 "
+                        android:textColor="@color/half_white"
+                        android:textSize="@dimen/size_16sp" />
+                    <LinearLayout
+                        android:id="@+id/left3"
+                        android:layout_marginRight="@dimen/size_15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/route_distance_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center|right"
+                            android:layout_gravity="center"
+                            android:text="@string/str_route_km"
+                            android:textColor="@color/half_white"
+                            android:textSize="@dimen/size_12sp" />
+
+                        <TextView
+                            android:id="@+id/route_time_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size_10dp"
+
+                            android:gravity="center|right"
+                            android:text="@string/str_route_minute"
+                            android:textColor="@color/half_white"
+                            android:textSize="@dimen/size_16sp" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/wait_view"
+                style="@style/widget_waiting_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/refresh_circle" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/route">
+
+        <com.amap.api.maps.TextureMapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/traffic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/map"
+            android:layout_alignTop="@+id/map"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:src="@mipmap/traffic_open_day"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/location"
+            android:src="@mipmap/map_location"
+            android:layout_alignLeft="@+id/map"
+            android:layout_alignBottom="@+id/map"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginBottom="@dimen/size_10dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/strategy_set"
+            android:src="@mipmap/strategy_set_icon"
+            android:layout_above="@+id/location"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:layout_marginLeft="@dimen/size_10dp"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zoom_in"
+            android:src="@mipmap/map_zoom_in"
+            android:layout_alignRight="@+id/map"
+            android:layout_alignBottom="@+id/map"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:layout_marginBottom="@dimen/size_10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/zoom_out"
+            android:src="@mipmap/map_zoom_out"
+            android:layout_above="@+id/zoom_in"
+            android:layout_alignRight="@+id/map"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

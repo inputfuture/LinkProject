@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NaviActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/easy_stop_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/iv_layout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size_20dp">
+            <ImageView
+                android:id="@+id/iv_reducezoom"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/size_20dp"
+                android:src="@mipmap/map_zoom_in" />
+
+            <ImageView
+                android:id="@+id/iv_addzoom"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_above="@+id/iv_reducezoom"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_20dp"
+                android:src="@mipmap/map_zoom_out" />
+
+            <ImageView
+                android:id="@+id/iv_localization"
+                android:layout_width="@dimen/size_48dp"
+                android:layout_height="@dimen/size_48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/localization" />
+            <ImageView
+                android:layout_width="@dimen/size_48dp"
+                android:layout_height="@dimen/size_48dp"
+                android:layout_above="@id/iv_localization"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:src="@mipmap/north_up_mode" />
+        </RelativeLayout>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlt_teach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tran_black"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/iv_teach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/map_help_l" />
+
+        <ImageView
+            android:id="@+id/iv_teach_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="120dp"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:orientation="horizontal"
+        android:clipChildren="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/easy_stop_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@color/transparent"
+            android:clipChildren="false"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

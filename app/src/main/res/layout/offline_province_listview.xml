@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExpandableListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/province_download_list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:scrollbarThumbVertical="@color/transparent_30"
+    android:scrollbarSize="@dimen/size_2dp"
+    android:scrollbarStyle="outsideOverlay"/>

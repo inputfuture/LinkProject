@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_210dp"
+        android:background="@drawable/white_corner_bg">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_16sp"
+            android:textColor="@color/black_85"
+            android:text="导航结束"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black_30"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_below="@+id/title"></LinearLayout>
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_80dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_20dp"
+                    android:textColor="@color/black_60"
+                    android:text="20"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_20dp"
+                    android:textColor="@color/black_30"
+
+                    android:text="里程(公里)"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/all_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_20dp"
+                    android:textColor="@color/black_60"
+                    android:text="20"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_20dp"
+                    android:textColor="@color/black_30"
+
+                    android:text="用时(分钟)"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/average_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_20dp"
+                    android:textColor="@color/black_60"
+                    android:text="20"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_20dp"
+                    android:textColor="@color/black_30"
+
+                    android:text="平均(km/h)"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/hight_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_20dp"
+                    android:textColor="@color/black_60"
+                    android:text="20"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_20dp"
+                    android:textColor="@color/black_30"
+
+                    android:text="最高(km/h)"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="@dimen/size_200dp"
+            android:layout_height="@dimen/size_40dp"
+            android:background="@drawable/navi_btn_bg"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:gravity="center"
+            android:id="@+id/close_layout"
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关闭"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_16sp"/>
+            <TextView
+                android:layout_marginLeft="@dimen/font_30"
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关闭"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_16sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

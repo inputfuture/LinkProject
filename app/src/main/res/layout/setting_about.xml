@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:background="@color/transparent_5">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_4dp"
+            android:layout_marginRight="@dimen/size_4dp"
+            android:scaleType="center"
+            android:background="@drawable/button_circle_selector"
+            android:src="@mipmap/back_icon" />
+
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size_5dp"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:background="@color/transparent_30" />
+
+
+        <TextView
+            android:layout_toRightOf="@id/tv_line"
+            android:layout_width="match_parent"
+            android:text="@string/about"
+            android:textColor="@color/white"
+            android:layout_marginRight="56dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/tv_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/size_10dp"
+            android:paddingTop="@dimen/size_10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/notification"
+            android:textColor="@color/transparent_60"
+            android:textSize="12sp"/>
+
+    <LinearLayout
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_above="@+id/tv_notify"
+        android:layout_marginLeft="@dimen/size_20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lyt_cusser"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_60dp"
+            android:background="@drawable/music_list_selector"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size_20dp"
+                android:src="@mipmap/setting_ic_arraw" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/str_lemi_community"
+                android:textColor="@color/transparent_60"
+                android:textSize="@dimen/textsize_16sp" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_line" />
+        <RelativeLayout
+            android:id="@+id/lyt_newhelp"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_60dp"
+            android:background="@drawable/music_list_selector"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size_20dp"
+                android:src="@mipmap/setting_ic_arraw" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/setting_help"
+                android:textColor="@color/transparent_60"
+                android:textSize="@dimen/textsize_16sp" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_line" />
+
+        <RelativeLayout
+            android:id="@+id/lyt_version"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_60dp"
+            android:background="@drawable/music_list_selector"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="20dip"
+                android:src="@mipmap/app_update"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_version_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="2.0"
+                android:textColor="@color/transparent_60"
+                android:textSize="@dimen/textsize_16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_currant_version"
+                android:textColor="@color/transparent_60"
+                android:textSize="@dimen/textsize_16sp" />
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_line" />
+    </LinearLayout>
+
+
+</RelativeLayout>

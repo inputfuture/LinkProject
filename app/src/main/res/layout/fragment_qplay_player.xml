@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/app_back"
+            android:src="@mipmap/back_icon"
+            android:padding="13dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/size_20dp"
+        android:layout_marginRight="@dimen/size_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.3">
+
+        <TextView
+            android:id="@+id/base_line"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <ImageView
+            android:id="@+id/album_picture"
+            android:src="@mipmap/ic_defult"
+            android:scaleType="centerCrop"
+            android:layout_above="@id/base_line"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/song_name"
+            android:text="歌曲名"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:ems="12"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/base_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/artist"
+            android:text="歌手名"
+            android:textColor="#AFA3AF"
+            android:maxLines="1"
+            android:ems="12"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/album"
+            android:text="专辑名"
+            android:textColor="#AFA3AF"
+            android:maxLines="1"
+            android:ems="12"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3.7"
+    android:layout_marginLeft="@dimen/size_20dp"
+    android:layout_marginRight="@dimen/size_20dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@drawable/music_play_bottom"
+        android:padding="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/download"
+            android:src="@mipmap/download_icon_gray"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:layout_width="0dp"
+            android:layout_height="25dp" />
+
+        <ImageView
+            android:id="@+id/play_pre"
+            android:src="@mipmap/music_previous_song"
+            android:onClick="click"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="25dp" />
+
+        <ImageView
+            android:id="@+id/play_pause"
+            android:src="@mipmap/music_pause"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:id="@+id/play_next"
+            android:src="@mipmap/music_next_song"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:id="@+id/play_mode"
+            android:src="@mipmap/music_mode_order"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:scaleType="centerInside"
+            android:layout_height="25dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/curr_time"
+            android:text="0:00"
+            android:textColor="@color/transparent_60"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.letv.leauto.ecolink.ui.view.EcoSeekBar
+            android:id="@+id/seek_bar"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:max="100"
+            android:minHeight="@dimen/size_2dp"
+            android:maxHeight="@dimen/size_2dp"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@drawable/music_progress_selector"
+            android:splitTrack="false"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/total_time"
+            android:layout_gravity="center_vertical"
+            android:text="0:00"
+            android:textSize="14sp"
+            android:textColor="@color/transparent_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+﻿######################################################
+#乐乐智能服务
+#使用国内域名
+AppId=7
+AppKey=4002DDC8431646C7AB36F0B6B8D825F2
+AppSceret=3e5826615a33ca4aabf514d087f7ec0b
+ServiceUrl=http://voice.go.letv.com
+
+#使用国外域名
+#AppId=1
+#AppKey=21D225B489F348D4AD238B246EC3535D
+#AppSceret=9cba6ce5df5f71078aad989d7f85daf2
+#ServiceUrl=http://voice-us.go.letv.com

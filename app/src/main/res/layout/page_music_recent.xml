@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical"
+
+    >
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/album_name"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/transparent_85"
+            android:textSize="@dimen/size_22sp"
+            android:visibility="visible"/>
+        <TextView
+            android:background="@drawable/album_eidt_custom_selector"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:layout_width="@dimen/size_80dp"
+            android:layout_height="@dimen/size_30dp"
+            android:id="@+id/clear_history"
+            android:text="@string/clear_history"
+            android:gravity="center"
+            android:clickable="true"
+            android:textColor="@color/transparent_60"
+            android:textSize="@dimen/size_16sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+
+<LinearLayout
+    android:id="@+id/recent_diver"
+    android:layout_marginTop="@dimen/size_10dp"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/transparent_20"
+    android:layout_below="@+id/title"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:layout_marginLeft="@dimen/size_20dp"/>
+    <com.letv.leauto.ecolink.ui.page.ReWriteListView
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="@dimen/size_20dp"
+        android:id="@+id/radio_album_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:listSelector="@color/transparent"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@color/transparent_30"
+        android:scrollbarSize="@dimen/size_2dp"
+        android:scrollbarStyle="outsideOverlay"
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/nodate"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/size_450dp"
+        android:textColor="@color/transparent_60"
+        android:textSize="@dimen/size_18sp"
+   />
+
+</RelativeLayout>

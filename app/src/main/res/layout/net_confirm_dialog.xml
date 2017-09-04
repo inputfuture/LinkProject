@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:background="@color/white">
+
+    <TextView
+        android:id="@+id/notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/size_20dp"
+        android:layout_marginRight="@dimen/size_20dp"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/size_16sp"
+        android:textColor="@color/transparent_black_60"
+        android:text="@string/no_net"/>
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/notice"
+        android:layout_marginTop="@dimen/size_45dp"
+        android:layout_marginBottom="@dimen/size_20dp"
+        >
+
+            <TextView
+                android:id="@+id/confirm"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:background="@drawable/popupwindow_bt_sure_selector"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textSize="@dimen/size_16sp"
+                android:textColor="@drawable/popupwindow_textcolor_sure_selector"/>
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/size_30dp"
+                android:background="@drawable/popupwindow_bt_cancle_selector"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textSize="@dimen/size_16sp"
+                android:textColor="@drawable/popupwindow_textcolor_cancle_selector"
+                />
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/never_mind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ll_button"
+        android:layout_marginBottom="@dimen/size_15dp"
+        style="@style/checkable_style"
+        android:text="@string/str_next_not_tip"
+        android:checked="true"
+        android:textColor="@color/transparent_black_60"
+        android:textSize="@dimen/textsize_12sp"
+        android:visibility="gone"
+        />
+</RelativeLayout>

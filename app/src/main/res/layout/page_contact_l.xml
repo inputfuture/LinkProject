@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/contact_null"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/contact_null_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="通讯录未同步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/contact_page"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/contacts_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:divider="@null"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@color/transparent_30"
+            android:scrollbarSize="@dimen/size_2dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:dividerHeight="0dp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/dialog_addmember"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="24sp"-->
+            <!--android:background="@drawable/call_bg"-->
+            <!--android:visibility="invisible" />-->
+
+        <!--<com.letv.leauto.ecolink.ui.callbean.SideBar-->
+            <!--android:id="@+id/sidrbar_addmember"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_alignParentRight="true" />-->
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_7dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建"
+        android:visibility="gone"
+        android:id="@+id/create"/>
+</RelativeLayout>

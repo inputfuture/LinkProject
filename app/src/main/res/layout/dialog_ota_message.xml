@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/route_set_close"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_180dp"
+            android:background="#2db8a0">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本"
+                android:id="@+id/version"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:textSize="@dimen/size_12sp"/>
+            <TextView
+                android:layout_below="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大小"
+                android:id="@+id/size"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:textSize="@dimen/size_12sp"/>
+            <TextView
+                android:layout_below="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日期"
+                android:id="@+id/time"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:textSize="@dimen/size_12sp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ota_update"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OTA系统固件升级"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/size_40dp"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/size_12sp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/type0"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:text="更新内容"
+                android:textSize="@dimen/size_16sp"
+                android:textColor="@color/black_85"
+                android:id="@+id/content_title"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:text="更新内容"
+                android:textSize="@dimen/size_12sp"
+                android:textColor="@color/black_60"
+                android:id="@+id/content"
+                android:layout_below="@+id/content_title"/>
+            
+            
+            <Button
+                android:id="@+id/update"
+                android:layout_width="@dimen/size_100dp"
+                android:layout_height="@dimen/size_30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="下载并升级"
+                android:background="@drawable/way_point_bg"
+                android:layout_marginBottom="@dimen/size_20dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/type1"
+            android:visibility="visible">
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="@dimen/size_240dp"
+                android:layout_height="@dimen/size_10dp"
+                android:layout_centerInParent="true"
+              style="@style/ota_progress_bar"/>
+            <TextView
+                android:id="@+id/progress_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progress"
+                android:text="0"
+                android:textSize="@dimen/size_16sp"
+                android:textColor="@color/black_85"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/type2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_60dp"
+                android:layout_marginRight="@dimen/size_60dp"
+
+                android:text="汽车固件已下载至手机，请连接汽车后根据提示进行升级"
+                android:textSize="@dimen/size_16sp"
+                android:textColor="@color/black_60"
+                android:layout_centerInParent="true"
+
+                />
+
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="@dimen/size_100dp"
+                android:layout_height="@dimen/size_30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="完成"
+                android:background="@drawable/way_point_bg"
+                android:layout_marginBottom="@dimen/size_20dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.letv.leauto.ecolink.ui.fragment.AlbumEidtFragment">
+
+    <!--已经按照布局修改-->
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:background="@color/transparent_5"
+        >
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:padding="12dp"
+            android:background="@drawable/button_circle_selector"
+            android:src="@mipmap/back_icon"/>
+        <LinearLayout
+            android:layout_toRightOf="@+id/back"
+            android:layout_width="1dp"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent_5"
+            android:layout_height="@dimen/size_38dp"></LinearLayout>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_16sp"
+            android:textStyle="bold"
+            android:text="@string/edit_album"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/size_10dp"
+            android:paddingRight="@dimen/size_10dp"
+            android:paddingTop="@dimen/size_5dp"
+            android:paddingBottom="@dimen/size_5dp"
+
+            android:background="@drawable/button_rantage_selector"
+            android:layout_marginRight="@dimen/size_15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/complete"
+            android:textSize="@dimen/textsize_16sp"
+            android:layout_centerVertical="true"
+            android:text="@string/complete"
+            android:textColor="@color/transparent_60"/>
+
+
+    </RelativeLayout>
+    <GridView
+        android:layout_marginLeft="@dimen/size_20dp"
+        android:layout_marginRight="@dimen/size_20dp"
+        android:layout_marginTop="@dimen/size_30dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/eidt_gridview"
+        android:listSelector="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="@dimen/size_20dp"
+        android:horizontalSpacing="@dimen/size_30dp"
+        android:numColumns="4"/>
+
+</LinearLayout>

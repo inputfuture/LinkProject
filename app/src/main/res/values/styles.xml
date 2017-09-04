@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="ThemeOverlay.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@drawable/bg_land</item>
+    </style>
+
+    <style name="Stash_Theme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">#00000000</item>
+        <!--<item name="android:windowBackground">@mipmap/stash_port</item>-->
+    </style>
+
+    <style name="DownloadCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/dg_download_checkbox</item>
+        <item name="android:text">@color/checkbox</item>
+    </style>
+    <style name="toggle_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/bg_toggle_checkbox</item>
+    </style>
+    <style name="navi_set_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/bg_navi_set_checkbox</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="title_layout_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_12sp</item>
+        <item name="android:textColor">@color/transparent_85</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="widget_waiting_dialog">
+        <item name="android:indeterminateDrawable">@drawable/widget_waiting_animation</item>
+    </style>
+
+    <style name="NobackDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+
+    </style>
+
+    <style name="checkable_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkable_selector</item>
+    </style>
+
+    <style name="Thincar_cover">
+        <item name="android:background">@mipmap/light_car_cover</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="MainActivityThem" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- <item name="android:screenOrientation">portrait</item>-->
+        <!--<item name="android:windowBackground">@mipmap/stash</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="bottom_in" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+    </style>
+    <style name="right_in" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_right</item>
+    </style>
+    <style name="left_in" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_left</item>
+    </style>
+
+    <style name="window_anim_style">
+        <item name="android:windowEnterAnimation">@anim/windowshow</item>
+        <item name="android:windowExitAnimation">@anim/windowdismis</item>
+    </style>
+
+    <style name="ota_progress_bar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/ota_progress</item>
+
+
+
+    </style>
+</resources>

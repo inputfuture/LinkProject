@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    >
+    <RelativeLayout
+        android:background="@drawable/white_corner_bg"
+        android:id="@+id/strategy_layout"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+       >
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_13dp"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_16sp"
+            android:textColor="@color/black"
+            android:text="@string/navi_strategy_pre"/>
+        <LinearLayout
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/size_18dp"
+            android:orientation="horizontal"
+            android:background="@color/title_dividing_line"></LinearLayout>
+
+        <GridView
+            android:layout_marginLeft="@dimen/size_30dp"
+            android:layout_marginRight="@dimen/size_30dp"
+
+            android:verticalSpacing="@dimen/size_14dp"
+            android:horizontalSpacing="@dimen/size_20dp"
+
+            android:layout_below="@+id/title"
+            android:layout_marginTop="@dimen/size_35dp"
+            android:id="@+id/strategy_choose_list"
+            android:layout_width="match_parent"
+            android:numColumns="2"
+            android:gravity="center"
+            android:layout_above="@+id/update_route"
+            android:layout_height="match_parent"
+            >
+
+        </GridView>
+
+        <TextView
+            android:id="@+id/update_route"
+            android:layout_width="@dimen/size_200dp"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/update_route"
+            android:layout_marginBottom="@dimen/size_16dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16sp"
+            android:background="@drawable/navi_btn_bg"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_toRightOf="@+id/strategy_layout"
+        android:id="@+id/close"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/route_set_close"/>
+</RelativeLayout>

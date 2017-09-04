@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@color/transparent_30"
+        android:scrollbarSize="@dimen/size_2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="@dimen/size_200dp"
+            android:layout_height="@dimen/size_30dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:weightSum="2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/download_btn_bg_three"
+            android:orientation="horizontal">
+
+            <!-- <RadioButton
+                 android:id="@+id/guss_like"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:background="@drawable/download_bg"
+                 android:button="@null"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:text="猜你喜欢"
+                 android:textSize="@dimen/textsize_16sp"
+                 android:textColor="@color/transparent_60"
+                 android:visibility="gone"/>-->
+
+            <RadioButton
+                android:id="@+id/favorite"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:layout_weight="1"
+                android:background="@drawable/download_bg"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:button="@null"
+                android:text="@string/main_nav_collection"
+                android:textSize="@dimen/textsize_16sp"
+                android:textColor="@color/transparent_60" />
+            <RadioButton
+                android:id="@+id/recent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/download_bg"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:button="@null"
+                android:text="@string/str_history"
+                android:textSize="@dimen/textsize_16sp"
+                android:textColor="@color/transparent_60" />
+        </RadioGroup>
+
+
+        <!--&lt;!&ndash;可滑动的布局内容&ndash;&gt;-->
+        <!--<com.letv.leauto.ecolink.ui.kuwomusicfragment.ReWriteViewPager-->
+        <!--android:id="@+id/vp_viewPager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_weight="1" />-->
+        <!--可滑动的布局内容-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/vp_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size_10dp"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

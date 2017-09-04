@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">lib-keypad</string>
+    <string name="keypad_conn_success">"LeKey connect success"</string>
+    <string name="keypad_status">"LeKey Status"</string>
+    <string name="keypad_connected">"LeKey Connected"</string>
+    <string name="keypad_disconnected">"LeKey Disconnected"</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <RelativeLayout
+        android:id="@+id/strategy_item"
+        android:layout_width="@dimen/size_80dp"
+        android:layout_height="@dimen/size_80dp"
+        android:background="@color/black_10"
+        android:orientation="vertical">
+        <ImageView
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:id="@+id/strategy_choose_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/avoid_congestion"
+            android:clickable="false" />
+
+        <TextView
+            android:layout_below="@+id/strategy_choose_flag"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:id="@+id/strategy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black_60"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/size_12sp"
+            android:text="躲避拥堵"
+            />
+        <ImageView
+            android:id="@+id/strategy_check_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/strategy_check_icon"/>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

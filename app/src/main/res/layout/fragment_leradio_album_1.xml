@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <RelativeLayout
+            android:id="@+id/album_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48dp"
+            android:orientation="horizontal"
+            android:background="@color/transparent_5">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/size_6dp"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/size_14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_album_button"
+                    android:src="@mipmap/album_add"
+                    android:background="@drawable/button_circle_selector"
+
+                    />
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/size_6dp"
+                    android:layout_width="@dimen/size_1dp"
+                   android:layout_height="@dimen/size_38dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/edit_album_button"
+                    android:background="@color/transparent_5"
+                    android:id="@+id/diver"
+                    ></LinearLayout>
+
+
+                <com.letv.leauto.ecolink.ui.view.SlideTablayout
+                    android:layout_marginLeft="@dimen/size_20dp"
+		    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/diver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/music_state_icon"
+                    android:id="@+id/album_strip"
+                    >
+                </com.letv.leauto.ecolink.ui.view.SlideTablayout>
+                <ImageView
+                    android:layout_marginLeft="@dimen/size_15dp"
+                    android:layout_marginRight="@dimen/size_20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/size_40dp"
+                    android:layout_height="@dimen/size_40dp"
+                    android:id="@+id/music_state_icon"
+                    android:src="@mipmap/music_play_white"
+                    android:background="@drawable/button_circle_selector"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <com.letv.leauto.ecolink.ui.view.LeRadioViewpager
+            android:layout_below="@+id/album_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/album_pager">
+        </com.letv.leauto.ecolink.ui.view.LeRadioViewpager>
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+.idea/libraries
+.gradle/
+*.iml
+GaiaLibrary/build
+lib-keypad/build
+/build
+local.properties

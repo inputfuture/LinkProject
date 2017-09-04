@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:text="@string/notification"
+        android:textSize="20sp"
+
+        />
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_above="@+id/bottom"
+        android:layout_marginTop="@dimen/size_20dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/size_20dp">
+
+        <TextView
+            android:id="@+id/btn_access"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_background"
+            android:layout_centerInParent="true"
+            android:text="@string/str_access"
+            android:textSize="@dimen/size_12sp"/>
+
+        <CheckBox
+            android:id="@+id/chk_forever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:checked="true"
+            android:text="@string/str_never_mind"
+            android:textSize="@dimen/size_12sp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/easy_stop_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+        <!--
+        <TextView
+            android:id="@+id/iv_norecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/map_no_history"
+            android:visibility="gone" />
+        <ListView
+            android:id="@+id/history_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/map_his_item_default"
+            android:dividerHeight="0dp"/>
+        -->
+
+        <RelativeLayout
+            android:id="@+id/iv_layout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size_30dp">
+            <ImageView
+                android:id="@+id/iv_addzoom"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/map_zoom_out"
+                android:layout_above="@+id/iv_reducezoom"
+                android:layout_marginRight="@dimen/size_20dp"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/iv_reducezoom"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@mipmap/map_zoom_in"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentBottom="true" />
+
+
+            <ImageView
+                android:id="@+id/iv_localization"
+                android:layout_width="@dimen/size_48dp"
+                android:layout_height="@dimen/size_48dp"
+                android:src="@mipmap/localization"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:layout_alignParentBottom="true"/>
+            <ImageView
+                android:layout_width="@dimen/size_48dp"
+                android:layout_height="@dimen/size_48dp"
+                android:layout_above="@id/iv_localization"
+                android:src="@mipmap/north_up_mode"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:layout_marginBottom="@dimen/size_10dp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="20dp"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlt_teach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_teach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:src="@mipmap/map_help" />
+
+        <ImageView
+            android:id="@+id/iv_teach_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_teach"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:orientation="horizontal"
+        android:clipChildren="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/easy_stop_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

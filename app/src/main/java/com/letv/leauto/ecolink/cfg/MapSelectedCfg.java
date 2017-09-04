@@ -1,0 +1,1 @@
+package com.letv.leauto.ecolink.cfg;/** * Created by shimeng on 14/5/23. */public class MapSelectedCfg {    public static final String MAP_SELECTED = "map_selecte";}

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_log"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/calllog_null"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_no_contact"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/textsize_16sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/recent_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@color/transparent_30"
+            android:scrollbarSize="@dimen/size_2dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:listSelector="@drawable/music_list_selector"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/keypad_list"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_50dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/callnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:freezesText="true"
+                android:gravity="center"
+                android:maxLength="15"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/textsize_20sp" />
+
+            <ImageView
+                android:id="@+id/delnum"
+                android:layout_width="@dimen/size_40dp"
+                android:layout_height="@dimen/size_40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:background="@drawable/button_circle_selector"
+                android:scaleType="center"
+                android:src="@mipmap/delnum"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:visibility="invisible">
+
+            <ListView
+                android:id="@+id/searchResult"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@null"
+                android:scrollbars="vertical"
+                android:scrollbarThumbVertical="@color/transparent_30"
+                android:scrollbarSize="@dimen/size_2dp"
+                android:scrollbarStyle="outsideOverlay"
+                android:listSelector="@drawable/music_list_selector"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+
+            <ImageButton
+                android:id="@+id/call"
+                android:layout_width="@dimen/size_200dp"
+                android:layout_height="@dimen/size_40dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/call_bg"
+                android:src="@mipmap/ic_phone_callout" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/size_1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/size_17dp"
+        android:layout_marginTop="@dimen/size_17dp"
+        android:background="@color/transparent_30" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/num1layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:clickable="true"
+                android:background="@drawable/phone_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/num_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/num2layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:clickable="true"
+                android:background="@drawable/phone_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/num_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/num3layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:clickable="true"
+                android:background="@drawable/phone_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/num_3" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/num4layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:clickable="true"
+                android:background="@drawable/phone_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/num_4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/num5layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:clickable="true"
+                android:background="@drawable/phone_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/num_5" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/num6layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:clickable="true"
+                android:background="@drawable/phone_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/num_6" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/num7layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:clickable="true"
+                android:background="@drawable/phone_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/num_7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/num8layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:clickable="true"
+                android:background="@drawable/phone_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/num_8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/num9layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:clickable="true"
+                android:background="@drawable/phone_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/num_9" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/numllayout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:clickable="true"
+                android:background="@drawable/music_list_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/num_xing" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/num0layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:clickable="true"
+                android:background="@drawable/music_list_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/num_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/numrlayout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:clickable="true"
+                android:background="@drawable/music_list_selector"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/num_jing" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

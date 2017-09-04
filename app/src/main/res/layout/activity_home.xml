@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_title"
+        android:layout_marginBottom="@dimen/size_49dp"
+
+        android:background="@null">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null">
+
+            <FrameLayout
+                android:id="@+id/kuwo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/music_play"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/map_frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/main_frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null" />
+
+            <FrameLayout
+                android:id="@+id/local_music_frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/music_frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/call_frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/setting_frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/easy_stop_frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:visibility="gone" />
+            <FrameLayout
+                android:id="@+id/qplay_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+      >
+
+            <LinearLayout
+                android:id="@+id/rl_bottombar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@color/background_main"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/iv_music"
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:contentDescription="BottomMusic"
+                    android:src="@mipmap/button_radio"/>
+
+
+                <ImageButton
+                    android:id="@+id/iv_map"
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:contentDescription="BottomNavi"
+                    android:src="@mipmap/button_map" />
+
+                <ImageButton
+                    android:id="@+id/iv_home"
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:contentDescription="BottomHome"
+                    android:nextFocusRight="@+id/iv_phone_book"
+                    android:src="@mipmap/button_home" />
+
+
+                <ImageButton
+                    android:id="@+id/iv_phone_book"
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:contentDescription="BottomPhoneBook"
+                    android:src="@mipmap/button_phone" />
+
+
+
+                <ImageButton
+                    android:id="@+id/iv_voice"
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:contentDescription="BottomPhoneBook"
+                    android:src="@mipmap/button_mc"  />
+            </LinearLayout>
+            <!--<com.letv.leauto.ecolink.ui.view.ColorView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1dp"
+                android:layout_alignParentBottom="true"/>-->
+
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/debug_memory_tv"
+        android:textColor="@color/red_highlight"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_below="@+id/debug_memory_tv"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:id="@+id/debug_current_cpu_tv"
+        android:textColor="@color/red_highlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</RelativeLayout>

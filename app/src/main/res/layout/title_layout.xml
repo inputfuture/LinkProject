@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_title"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_3dp"
+        android:layout_marginLeft="@dimen/size_12dp"
+        android:layout_marginRight="@dimen/size_12dp"
+        android:layout_marginTop="@dimen/size_3dp">
+
+        <TextView
+            android:id="@+id/rest_time"
+            style="@style/title_layout_style"
+            android:layout_centerInParent="true"
+            android:text="" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_temp"
+                style="@style/title_layout_style"
+                android:layout_marginLeft="@dimen/size_5dp"
+                android:layout_toRightOf="@id/iv_weather"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                style="@style/title_layout_style"
+                android:layout_marginLeft="@dimen/size_5dp"
+                android:layout_toRightOf="@id/tv_temp"
+                android:text="" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_bluetooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_3dp"
+                android:visibility="gone"
+                android:src="@mipmap/iv_bluetooth"/>
+            <ImageView
+                android:id="@+id/iv_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_3dp"
+                android:visibility="gone"
+                android:src="@mipmap/wifi0"/>
+            <ImageView
+                android:id="@+id/iv_xinhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_3dp"
+                android:visibility="gone"
+                android:src="@mipmap/single0"/>
+            <ImageView
+                android:id="@+id/iv_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/battery1"
+                android:layout_marginRight="@dimen/size_3dp"/>
+            <TextView
+                android:id="@+id/tv_detail_time"
+                style="@style/title_layout_style"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.3dp"
+        android:background="@color/background_title_layout_line" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/zoom_add"
+        android:layout_width="@dimen/size_40dp"
+        android:layout_height="@dimen/size_40dp"
+        android:background="@color/transparent"
+        android:scaleType="center"
+        android:layout_marginBottom="@dimen/size_10dp"
+        android:src="@mipmap/map_zoom_out"/>
+
+
+    <ImageButton
+        android:id="@+id/zoom_reduce"
+        android:background="@color/transparent"
+        android:layout_width="@dimen/size_40dp"
+        android:layout_height="@dimen/size_40dp"
+        android:scaleType="center"
+        android:src="@mipmap/map_zoom_in"/>
+</LinearLayout>

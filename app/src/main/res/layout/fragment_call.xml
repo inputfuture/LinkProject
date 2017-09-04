@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:background="@color/transparent_5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll_call"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_call"
+                    android:layout_width="@dimen/size_80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/str_dail"
+                    android:textSize="@dimen/textsize_16sp"
+                    android:textColor="@color/transparent_60"  />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_book"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_book"
+                    android:layout_width="@dimen/size_80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/str_contact"
+                    android:textSize="@dimen/textsize_16sp"
+                    android:textColor="@color/transparent_60"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_yellow"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_yellow"
+                    android:layout_width="@dimen/size_80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/yellow_page"
+                    android:textSize="@dimen/textsize_16sp"
+                    android:textColor="@color/transparent_60"  />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/album_strip"></android.support.v4.view.ViewPager>
+</LinearLayout>

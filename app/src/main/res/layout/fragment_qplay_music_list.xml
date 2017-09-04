@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:mContext="com.example.e.qqmusicusefragment.MainActivity">
+
+    <RelativeLayout
+        android:background="@color/transparent_5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/app_back"
+            android:padding="13dp"
+            android:src="@mipmap/back_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:background="#6A4F58"
+            android:layout_width="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/app_back"
+            />
+
+        <TextView
+            android:id="@+id/folder_name"
+            android:text="文件夹名"
+
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/music_playing_stop"
+            android:src="@mipmap/music_play_green"
+            android:padding="13dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/unLogin_tv"
+            android:text="QQ音乐未登录\n请确保QQ音乐已经登录"
+            android:visibility="gone"
+            android:lineSpacingExtra="5dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/transparent_85"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+        <com.letv.leauto.ecolink.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res/com.letv.leauto.ecolink"
+            android:id="@+id/song_list"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/size_20dp"
+            ptr:ptrHeaderTextColor="#ffffff"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@color/transparent_30"
+            android:scrollbarSize="@dimen/size_2dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:divider="@null"
+            android:listSelector="@drawable/music_list_selector"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/transparent_85"
+            android:textSize="@dimen/size_16sp"
+            android:id="@+id/empty_mess"/>
+
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

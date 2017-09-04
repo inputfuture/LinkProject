@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_layout"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar"
+        android:id="@+id/top_bar"/>
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar"
+        android:layout_above="@+id/bottom"
+        android:scrollbars="none"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_60dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/btn_access"
+            android:layout_width="@dimen/size_90dp"
+            android:layout_height="30dp"
+            android:background="@drawable/sure_selector"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/str_access"
+            android:textSize="@dimen/size_16sp"
+            android:textColor="@drawable/popupwindow_textcolor_sure_selector"
+            />
+
+        <CheckBox
+            android:id="@+id/chk_forever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_12dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:checked="true"
+
+            android:text="@string/str_next_not_tip"
+            style="@style/DownloadCheckBox"
+            android:textSize="@dimen/size_12sp"
+            android:textColor="@color/transparent_60"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

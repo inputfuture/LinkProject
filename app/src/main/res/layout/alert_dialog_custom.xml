@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content"
+    android:background="@drawable/update_dialog_bg"
+
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/title"
+        android:text="@string/str_software_update_tip"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:id="@+id/diver"
+        android:layout_width="260dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:background="@color/black_60"></LinearLayout>
+
+    <ScrollView
+        android:scrollbarThumbVertical="@color/transparent_30"
+        android:scrollbarSize="@dimen/size_2dp"
+        android:scrollbarStyle="outsideOverlay"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diver"
+        android:layout_above="@+id/bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="@dimen/size_10dp">
+        <TextView
+
+
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_60"
+            android:textSize="12sp"
+            />
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_above="@+id/update_not_mind"
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:id="@+id/positiveButton"
+            android:textColor="@drawable/popupwindow_textcolor_sure_selector"
+            android:text="@string/ok"
+            android:background="@drawable/popupwindow_bt_sure_selector"
+            android:gravity="center"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/negativeButton"
+            android:layout_width="90dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/popupwindow_bt_cancle_selector"
+            android:textColor="@drawable/popupwindow_textcolor_cancle_selector"
+            android:gravity="center"
+            android:text="@string/str_ignore"
+            android:textSize="16sp"/>
+
+
+
+    </RelativeLayout>
+    <CheckBox
+        android:layout_marginTop="21dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_not_mind"
+        style="@style/DownloadCheckBox"
+        android:text="@string/str_next_not_tip"
+        android:textColor="@color/black_60"
+
+        android:layout_marginBottom="21dp"
+        />
+</RelativeLayout>

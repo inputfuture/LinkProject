@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+
+    <CheckBox
+        android:id="@+id/offine_checked_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/checkbox_bg"
+        android:clickable="false"
+        android:focusable="false"
+        android:background="@color/transparent"
+        android:layout_marginRight="@dimen/size_5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/offine_checked_item"
+        android:text="北京"
+        android:textColor="@color/transparent_60"
+        android:textSize="@dimen/font_32" />
+
+    <TextView
+        android:id="@+id/name_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/name"
+        android:layout_toLeftOf="@+id/download_progress_status"
+        android:text="总大小"
+        android:textColor="@color/transparent_60"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/download_progress_status"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginRight="@dimen/size_20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/offline_map_downed"
+        android:gravity="center"
+        android:text="@string/download_installed"
+        android:textColor="@color/half_white"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/list_line" />
+
+</RelativeLayout>

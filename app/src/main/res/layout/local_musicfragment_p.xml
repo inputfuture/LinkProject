@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:background="@color/transparent_5">
+
+
+        <LinearLayout
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_60dp"
+            android:layout_marginRight="@dimen/size_60dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/local_all_btn"
+                    android:layout_width="@dimen/size_110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="@string/str_all_songs"
+                    android:textSize="@dimen/textsize_20sp"
+                    android:textColor="@color/transparent_60" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/local_album_btn"
+                    android:layout_width="@dimen/size_110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@color/transparent"
+                   android:gravity="center"
+                    android:text="@string/str_music_list"
+                    android:textSize="@dimen/textsize_16sp"
+                    android:textColor="@color/transparent_60" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_marginRight="@dimen/size_4dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:id="@+id/music_state_icon"
+            android:src="@mipmap/music_play_white"
+            android:scaleType="center"
+            android:background="@drawable/button_circle_selector"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/album_strip"></android.support.v4.view.ViewPager>
+</LinearLayout>

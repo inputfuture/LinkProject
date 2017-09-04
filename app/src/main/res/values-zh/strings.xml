@@ -1,0 +1,580 @@
+<resources>
+    <string name="app_name">乐视车联</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- 主页菜单-->
+    <string name="menu_map">导航</string>
+    <string name="menu_leradio">LeRadio</string>
+    <string name="menu_wechat">微信</string>
+    <string name="menu_phone">电话</string>
+    <string name="menu_live">LIVE</string>
+    <string name="menu_levedio">乐视视频</string>
+    <string name="menu_set">设置</string>
+    <string name="menu_tingjiandan">停简单</string>
+    <string name="menu_kuwo">酷我</string>
+    <string name="menu_baidu">百度地图</string>
+    <string name="menu_gaode">高德地图</string>
+    <string name="menu_local_music">本地</string>
+    <string name="menu_qplay">QQ音乐</string>
+
+    <string name="main_nav_map">导航</string>
+    <string name="main_nav_music">LeRadio</string>
+    <string name="main_nav_localmusic">本地音乐</string>
+    <string name="main_nav_kuwo">酷我</string>
+    <string name="main_nav_live">LIVE</string>
+    <string name="main_nav_dial">电话</string>
+    <string name="main_nav_setting">设置</string>
+    <string name="main_nav_wechat">微信</string>
+
+    <string name="main_nav_levedio">乐视视频</string>
+    <string name="main_nav_tingjiandan">停简单</string>
+    <string name="main_kuwo_music">酷我音乐</string>
+    <string name="main_nav_local">本地</string>
+    <string name="main_local_music">本地音乐</string>
+    <string name="main_nav_magical">神奇</string>
+    <string name="main_nav_collection">收藏</string>
+    <string name="main_nav_recent">最近</string>
+
+    <string name="main_nav_baidu_map">百度地图</string>
+    <string name="main_nav_gaode_map">高德地图</string>
+    <string name="main_nav_baidu_navi">百度导航</string>
+    <string name="main_nav_gaode_navi">高德导航</string>
+    <string name="voice_navi">您可以这样说：</string>
+    <string name="vr_mul_result">找到多个结果请选择</string>
+    <string name="main_not_install_weixin">您的手机未安装微信</string>
+    <string name="main_not_install_gaode">未安装高德地图</string>
+    <string name="main_not_install_baidu">未安装百度地图</string>
+    <string name="main_download_letv_live">开始下载乐视live</string>
+    <string name="main_download_letv_video">开始下载乐视视频</string>
+    <string name="main_is_download_letv_live">是否下载乐视Live?</string>
+    <string name="main_is_download_letv_video">是否下载乐视视频?</string>
+    <string name="main_calling_not_support_voice">通话过程中不支持语音功能</string>
+    <string name="main_is_tingjiandan_navi">正在进行停简单导航 .</string>
+    <!-- music-->
+    <string name="music_no_local_data">您还没有任何本地音频文件</string>
+    <string name="music_no_favor_data">您还没有收藏任何音频文件</string>
+    <string name="music_no_recent_data">您还没有听过任何音频文件</string>
+    <string name="music_no_download_data">您还没有下载任何音频文件</string>
+    <string name="music_download_bt_hint">开启神奇下载</string>
+    <string name="music_download_bt_hint_opened">神奇下载已开启</string>
+    <string name="music_download_hint">开启后ecolink会在Wi-Fi情况下\n&#160;&#160;&#160;&#160;&#160;&#160;自动下载您收藏的内容</string>
+
+    <string name="msg_no_net">您的网络不给力\n推荐您先听本地、神奇下载</string>
+    <string name="msg_bad_net">播放出错\n请稍后重试</string>
+    <string name="toast_no_wchart">您的手机未安装微信.</string>
+    <string name="toast_no_letvclient">请下载安装乐视视频客户端.</string>
+    <string name="wait_download">等待下载.</string>
+    <string name="click_resume_download">点击继续下载</string>
+    <string name="un_define_name">未命名</string>
+    <string name="str_all_pause">全部暂停</string>
+    <string name="str_all_play">播放全部</string>
+    <string name="str_on_downloading">正在下载</string>
+    <string name="str_not_collection">你还没有收藏过</string>
+    <string name="str_live_doing">直播中</string>
+    <string name="str_live_not_start">未开始</string>
+    <string name="str_copration_media">合作媒体：</string>
+    <string name="str_paly_erro">播放异常</string>
+    <string name="str_paly_err_title">播放错误，请选择其他节目</string>
+    <string name="str_paly_back_abum">退出专辑</string>
+    <string name="str_paly_next">跳过</string>
+
+    <string name="music_lable_hot">热门</string>
+    <string name="music_lable_my">我的</string>
+    <string name="music_lable_talkshow">脱口秀</string>
+    <string name="music_lable_live">直播</string>
+    <string name="music_lable_music">音乐</string>
+    <string name="music_lable_Funny">搞笑</string>
+    <string name="music_lable_story">小说</string>
+    <string name="music_lable_Crosstalk">相声</string>
+    <string name="music_lable_emotion">情感</string>
+    <string name="music_lable_children">儿童</string>
+    <string name="musice_live_list">直播节目列表</string>
+    <!-- voice-->
+    <string name="vr_music_tip_one">来一首忘情水</string>
+    <string name="vr_music_tip_two">郭德纲</string>
+    <string name="vr_music_tip_three">郭德纲</string>
+    <string name="vr_map_tip_one">乐视大厦</string>
+    <string name="vr_map_tip_two">我要去天安门</string>
+    <string name="vr_map_tip_three">附近的加油站</string>
+    <string name="vr_map_tip_four">附近的银行</string>
+    <string name="vr_call_tip_one">打电话给大卫</string>
+    <string name="vr_call_tip_two">拨打10086</string>
+    <string name="vr_call_tip_three">拨打肯德基电话</string>
+    <string name="vr_other_tip_one">今日天气</string>
+    <string name="vr_other_tip_two">我想听相声</string>
+    <string name="vr_other_tip_three">来个笑话</string>
+    <string name="vr_can_not_find">找不到</string>
+    <string name="vr_reTry">请重试</string>
+
+    <!-- 语音识别-->
+    <string name="waiting_data">我在努力寻找中...</string>
+    <string name="open_download">开启神奇下载</string>
+    <string name="status">状态：</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="start">开始</string>
+    <string name="volume">音量</string>
+    <string name="start_dialog">调用语音识别对话框</string>
+    <string name="error_start">启动失败: 0x%1$s</string>
+    <string name="in_recog">正在识别</string>
+    <string name="please_speak">请说话</string>
+    <string name="speaking">说话中</string>
+    <string name="tofinish">说完</string>
+    <string name="setting">设置</string>
+    <string name="setting_lebox">轻车机</string>
+    <string name="setting_ecolink">ecolink互联</string>
+    <string name="setting_fm">乐车盒调频设</string>
+    <string name="str_connect">已连接</string>
+    <string name="str_unconnect">未连接</string>
+    <string name="str_history">历史</string>
+    <string name="history_recode">历史记录</string>
+    <string name="clear_history">清空历史</string>
+    <string name="delete_success">删除成功</string>
+    <string name="str_no_colleaction">没有收藏的专辑</string>
+    <string name="str_not_listen">你还没有收听过</string>
+
+    <string name="check_network">网络无法连接</string>
+    <string name="str_voice_recognaize_faild">识别失败请点击麦克重试!</string>
+    <string name="str_voice_listen_faild">没听清,请点击麦克重试!</string>
+    <string name="str_voice_retry">请单击麦克重试!</string>
+    <string name="str_voice_restart">单击重新开始</string>
+    <string name="str_voice_serching">搜索中</string>
+    <string name="str_voice_help">有什么可以帮您的</string>
+    <string name="str_voice_serch_null">未找到任何结果</string>
+    <string name="str_voice_listening">聆听中</string>
+    <string name="str_voice_recognizing">识别中</string>
+    <string name="str_voice_search_result">为您找到以下结果:</string>
+    <string name="str_voice_check_record_permition">请检查录音权限</string>
+    <string name="str_voice_click_check">单击检查权限</string>
+    <string name="str_voice_limit_permition">权限不足</string>
+    <string name="str_voice_check_permition">请检查权限</string>
+    <string name="str_voice_recognize_faild">识别失败</string>
+    <string name="str_voice_tmeout">连接超时</string>
+    <string name="str_voice_check_network">单击检查网络</string>
+    <string name="str_voice_part_result">~临时识别结果：</string>
+    <string name="str_voice_shwich_tts">*引擎切换至</string>
+    <string name="str_voice_online">在线</string>
+    <string name="str_voice_offline">离线</string>
+    <string name="str_voice_reparing">准备中</string>
+    <string name="str_voice_network_erro">网络问题</string>
+    <string name="str_voice_no_input">没有语音输入</string>
+    <!-- map-->
+    <string name="map_home">回家</string>
+    <string name="map_work">公司</string>
+    <string name="easy_stop_here">停这里</string>
+
+    <string name="map_no_history">您暂时还没有\n去过任何地方 </string>
+    <string name="map_route_start_navi">开始导航</string>
+    <string name="map_search_company">请添加公司的地址</string>
+    <string name="map_search_home">请添加家的地址</string>
+    <string name="map_navi_destination">请输入目的地</string>
+    <string name="map_error_network">搜索失败,请检查网络连接！</string>
+    <string name="map_error_key">key验证无效！</string>
+    <string name="map_eror_other">未知错误，请稍后重试!错误码为</string>
+    <string name="click_start_seatch">点击搜索目的地</string>
+    <string name="map_no_result">对不起，没有搜索到相关数据！</string>
+    <string name="map_choose_way">路线选择</string>
+    <string name="map_arrived">到达目的地</string>
+    <string name="map_get_way_faild">路径计算失败，请检查网络或输入参数</string>
+    <string name="map_get_way_ready">路径计算就绪</string>
+    <string name="map_navi_end">导航结束</string>
+    <string name="map_change_way">前方路线拥堵，路线重新规划</string>
+    <string name="map_naviway_dispach">您已偏航</string>
+    <string name="map_download_warn">请在“设置”中下载离线地图</string>
+
+    <string name="congestion">避免拥堵</string>
+    <string name="cost">避免收费</string>
+    <string name="avoidhightspeed">不走高速</string>
+    <string name="hightspeed">高速优先</string>
+    <string name="map_distance">距您%1$s</string>
+    <string name="navi_strategy_pre">路线偏好</string>
+    <string name="update_route">更新路线</string>
+
+
+    <!-- offlinemap -->
+
+    <string name="all_offline">城市列表</string>
+    <string name="download_offline">已下载</string>
+    <string name="str_download">下载</string>
+    <string name="str_downloading">下载中</string>
+    <string name="download_error">下载出错</string>
+    <string name="download_comlitely">下载完成</string>
+    <string name="download_resume">继续下载</string>
+    <string name="download_waiting">等待中</string>
+    <string name="download_pause">暂停</string>
+    <string name="download_update">更新</string>
+    <string name="download_have_update">有更新</string>
+    <string name="can_update">可更新</string>
+    <string name="download_wifi_only">没有wifi连接， 只在wifi下更新</string>
+    <string name="download_check_update">检查更新</string>
+    <string name="download_manage">下载管理</string>
+    <string name="download_unPackage">正在解压:</string>
+    <string name="download_unPackageing">解压中</string>
+    <string name="download_connect_faild">连接失败</string>
+    <string name="download_unPackage_faild">解压失败</string>
+    <string name="download_unPackage_cannot_delete">解压文件不能删除</string>
+    <string name="download_installed">已安装</string>
+    <string name="str_Whole_country">全国</string>
+    <string name="str_directly_Municipality">直辖市</string>
+    <string name="str_hm">港澳</string>
+    <string name="str_Province">省份</string>
+    <string name="weather_live">实时</string>
+    <string name="weather_forecast">预报</string>
+    <string name="report_time">发布时间</string>
+    <string name="location_share">位置分享</string>
+    <string name="delete">删除</string>
+    <string name="lots_manage">批量管理</string>
+    <string name="all_checked">全选</string>
+    <string name="manager">管理</string>
+    <string name="delete_map">确认删除离线数据？</string>
+
+    <!-- weather -->
+    <string name="weather_sunny" translatable="false">晴</string>
+    <string name="weather_sunny_night" translatable="false">晚上晴</string>
+    <string name="weather_cloudy" translatable="false">多云</string>
+    <string name="weather_cloudy_night" translatable="false">晚上多云</string>
+    <string name="weather_shade" translatable="false">阴</string>
+    <string name="weather_hail" translatable="false">冰雹</string>
+    <string name="weather_thunderstorm" translatable="false">雷阵雨</string>
+    <string name="weather_thunderstorm_with_hail" translatable="false">雷阵雨伴有冰雹</string>
+    <string name="weather_shower" translatable="false">阵雨</string>
+    <string name="weather_shower_night" translatable="false">晚上阵雨</string>
+    <string name="weather_sleet" translatable="false">雨夹雪</string>
+    <string name="weather_light_rain" translatable="false">小雨</string>
+    <string name="weather_rain" translatable="false">中雨</string>
+    <string name="weather_heavy_rain" translatable="false">大雨</string>
+    <string name="weather_rain_storm" translatable="false">暴雨</string>
+    <string name="weather_light_rain2" translatable="false">小到中雨</string>
+    <string name="weather_rain2" translatable="false">中到大雨</string>
+    <string name="weather_heavy_rain2" translatable="false">大到暴雨</string>
+    <string name="weather_rain_storm2" translatable="false">大暴雨</string>
+    <string name="weather_rain_storm3" translatable="false">特大暴雨</string>
+    <string name="weather_rain_storm4" translatable="false">暴雨到大暴雨</string>
+    <string name="weather_rain_storm5" translatable="false">大暴雨到特大暴雨</string>
+    <string name="weather_snow_shower" translatable="false">阵雪</string>
+    <string name="weather_snow_shower_night" translatable="false">晚上阵雪</string>
+    <string name="weather_light_snow" translatable="false">小雪</string>
+    <string name="weather_snow" translatable="false">中雪</string>
+    <string name="weather_heavy_snow" translatable="false">大雪</string>
+    <string name="weather_blizzard" translatable="false">暴雪</string>
+    <string name="weather_light_snow2" translatable="false">小到中雪</string>
+    <string name="weather_snow2" translatable="false">中到大雪</string>
+    <string name="weather_heavy_snow2" translatable="false">大到暴雪</string>
+    <string name="weather_fog" translatable="false">雾</string>
+    <string name="weather_sleet2" translatable="false">冻雨</string>
+    <string name="weather_sandstorm" translatable="false">沙尘暴</string>
+    <string name="weather_heavy_sandstorm" translatable="false">强沙尘暴</string>
+    <string name="weather_sand" translatable="false">扬沙</string>
+    <string name="weather_dust" translatable="false">浮尘</string>
+    <string name="weather_haze" translatable="false">霾</string>
+    <string name="weather_unknown" translatable="false">未知</string>
+    <string name="weather_cold">低温</string>
+    <string name="weather_hot">高温</string>
+    <string name="net_mobile_msg">您正在使用手机移动数据网络</string>
+
+    <string name="play_list">播放列表</string>
+    <string name="edit_album">编辑栏目</string>
+    <string name="complete">完成</string>
+    <string name="data_download_warn">2G/3G/4G下载会消耗流量</string>
+    <string name="no_net">无网络,请检查网络设置</string>
+    <string name="user_nets_download">使用2G/3G/4G网络下载</string>
+    <string name="user_nets_paly">使用2G/3G/4G网络播放</string>
+    <string name="choose_app_title">选择应用</string>
+    <string name="add_app">添加</string>
+    <string name="fourg_open_download">为保护你的流量，需要打开2G/3G/4G网络下载开关才能下载</string>
+    <string name="fourg_open_play">为保护你的流量，需要打开2G/3G/4G网络下载开关才能播放</string>
+    <string name="fourg_download_warn">当前为2G/3G/4G\n下载离线数据会消耗流量</string>
+    <string name="continue_download">继续下载</string>
+    <string name="vehicle_mess">车辆信息</string>
+    <string name="vehicle_main">我的车主卡（京Q A0000）</string>
+    <string name="myvehicle">我的车主卡</string>
+    <string name="vehicle_choose_first">品牌选择</string>
+    <string name="vehicle_mess_type">车型:</string>
+    <string name="vehicle_mess_type_ini">一汽奥迪A6L 2016款 TFSI技术型</string>
+    <string name="vehicle_save">保存</string>
+    <string name="vehicle_mess_card">车牌:</string>
+    <string name="vehicle_mess_cardnum_ini">京</string>
+    <string name="vehicle_mess_num_ini">请输入车牌号</string>
+    <string name="vehicle_mess_num_error">填写错误，请重新填写</string>
+    <string name="vehicle_mess_get_num_first">首次上牌日期:</string>
+    <string name="vehicle_mess_date_input">请输入日期</string>
+    <string name="vehicle_mess_now_distance">当前里程:</string>
+    <string name="vehicle_mess_distance_input">请输入里程</string>
+    <string name="vehicle_mess_last_dating">上次投保日期:</string>
+    <string name="vehicle_mess_date_choose">请选择日期</string>
+    <string name="vehicle_mess_last_wash">上次保养日期:</string>
+    <string name="phone_num">手机号:</string>
+    <string name="phone_num_input">请输入手机号</string>
+    <string name="makesure">确认</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">小时</string>
+    <string name="minute">分钟</string>
+    <string name="vehicle_maintain">我要保养</string>
+    <string name="vehicle_shop">我要卖车</string>
+    <string name="vehicle_violation">违章记录查询</string>
+    <string name="vehicle_violation_mechine_num">发动机号:</string>
+    <string name="vehicle_violation_mechine_num_input">请输入完整的发动机号</string>
+    <string name="vehicle_violation_car_num">车架号:</string>
+    <string name="vehicle_violation_car_num_input">请输入完整的17位车架号</string>
+    <string name="vehicle_violation_area">查询地区:</string>
+    <string name="vehicle_violation_choose_province">省市</string>
+    <string name="all">全部</string>
+    <string name="is_new">当前版本已经是最新</string>
+    <string name="upgrade_title">更新升级</string>
+    <string name="downloading_message">下载升级</string>
+    <string name="cancel_download">取消下载</string>
+    <string name="upgrade_message_from_server">从服务器升级</string>
+    <string name="upgrade_message_from_local">从本地升级</string>
+    <string name="update_fail_server">从服务器更新失败</string>
+    <string name="update_fail_client">客户端升级失败</string>
+    <string name="show_add">添加车辆信息可获得一张洗车券</string>
+    <string name="edit">编辑</string>
+    <string name="click_toadd">点击添加车辆</string>
+
+    <string name="net_not_good">网络连接不畅</string>
+    <string name="refresh_try">刷新试试</string>
+    <string name="local_to_see">去本地看看</string>
+    <string name="about">关于</string>
+    <string name="notification">《乐视车联服务条款》</string>
+    <string name="disclaimer_title">免责声明</string>
+    <string name="str_access">同意</string>
+    <string name="str_never_mind">下次不再提醒</string>
+    <string name="str_open">打开</string>
+    <string name="mobile_download">确定打开2G/3G/4G网络下载开关吗?</string>
+    <string name="mobile_play">确定打开2G/3G/4G网络播放开关吗?</string>
+    <string name="no_net_message">无网络，请检查网络设置</string>
+    <string name="delete_history">你确定要删除播放记录吗</string>
+
+    <string name="str_lemi_community">乐迷社区</string>
+    <string name="str_currant_version">当前版本</string>
+    <string name="str_nav_music">音乐</string>
+    <string name="str_setting_offlin_navi">离线地图</string>
+    <string name="str_setting_choose_navi_app">选择导航应用</string>
+    <string name="str_setting_screen_light">屏幕常亮</string>
+    <string name="str_setting_tts">语音播报</string>
+    <string name="str_setting_screen_mode">竖屏模式</string>
+    <string name="str_setting_cache">离线缓存</string>
+    <string name="str_setting_clean_catch">清除离线缓存</string>
+    <string name="str_setting_catch_limite">设置缓存上限</string>
+    <string name="str_click_edit">轻点以编辑</string>
+    <string name="str_software_update_tip">软件更新提示</string>
+    <string name="str_ignore">忽略</string>
+    <string name="str_next_not_tip">下次不再提醒</string>
+    <string name="str_album_title">专辑名称</string>
+    <string name="str_contact_list">联系人列表</string>
+    <string name="str_music_list">歌单</string>
+    <string name="str_residual">剩余</string>
+    <string name="str_estimate">预计</string>
+    <string name="str_arrived">到达</string>
+    <string name="str_first_letter_filter">首字母筛选</string>
+    <string name="str_address">地址</string>
+    <string name="str_glorious_years">光辉岁月</string>
+    <string name="str_listen">收听</string>
+    <string name="str_no_contact">无最近联系人</string>
+    <string name="str_route_most_quick"> 最快 </string>
+    <string name="str_route_most_short"> 最短 </string>
+    <string name="str_route_most_economical"> 最经济 </string>
+    <string name="str_route_minute">-- 分钟</string>
+    <string name="str_route_km">-- 千米</string>
+    <string name="map_error_other">未知错误</string>
+    <string name="voice_speech_ready">开始聆听</string>
+    <string name="voice_speech_amhere">我在呢</string>
+
+    <string name="today_weather">今日温度 %1$s</string>
+    <string name="today_limit">今日限号 %1$s</string>
+
+
+    <string name="selections">选集</string>
+    <string name="order">排序</string>
+    <string name="no_more_data">没有更多数据</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="delete_download">确定删除文件吗?</string>
+    <string name="no_downloading">没有任何下载中的任务</string>
+    <string name="no_downloaded">你还未下载任何内容，现在去下载</string>
+    <string name="no_net_toast">网络连接不畅,无法获取数据</string>
+    <string name="no_netRes_toast">网络资源获取失败，请重新获取</string>
+    <string name="no_add_music">没有要添加的歌曲</string>
+    <string name="no_data_toast">没有数据</string>
+    <string name="null_data_toast">没有数据</string>
+    <string name="net_erro_toast">网络错误</string>
+    <string name="connect_network_toast">请连接网络</string>
+    <string name="str_download_start">开始下载</string>
+    <string name="str_uncollection">取消收藏</string>
+    <string name="str_collection_success">收藏成功</string>
+    <string name="str_add_to_download">添加到下载队列</string>
+    <string name="i_know">知道了</string>
+    <string name="str_check_coupon">查看优惠券</string>
+    <string name="str_unlimit">不限</string>
+    <string name="str_unlimit_today">今天不限号</string>
+    <string name="str_limit_today">今日限号:</string>
+    <string name="str_unlimit_city">当前城市不限号</string>
+    <string name="str_app_limit">你选择的应用已经超过上限</string>
+    <string name="make_call">拨打</string>
+    <string name="str_dail">拨号</string>
+    <string name="str_contact">通讯录</string>
+    <string name="str_input_number_toast">请输入号码</string>
+    <string name="str_station_limit_toast">周边站点过少，扩大范围重新搜索</string>
+    <string name="str_more_stop">找到多个停车场</string>
+    <string name="str_location_success">定位成功</string>
+    <string name="str_location_faild">定位失败</string>
+    <string name="str_choose">请选择</string>
+    <string name="str_install_baidu_map">请安装百度地图</string>
+    <string name="str_install_gaode_map">请安装高德地图</string>
+    <string name="str_no_result">没有结果</string>
+    <string name="str_key_erro">key无效</string>
+    <string name="str_nomach_address">无匹配地址</string>
+    <string name="str_noaddress_check_network">没有获取到地址，请检查网络</string>
+    <string name="str_parking_lots">停车场</string>
+    <string name="str_gas_station">加油站</string>
+    <string name="str_toilets">洗手间</string>
+    <string name="str_food">美食</string>
+    <string name="str_more_result">找到多个结果,请选择</string>
+    <string name="str_start_adress_null">起始地点为空!</string>
+    <string name="str_end_address_null">目的地为空!</string>
+    <string name="str_view_route">预览全程</string>
+    <string name="str_navi_faild">导航失败，请重试</string>
+    <string name="navi_net_timeout_or_fiald">网络超时或网络失败</string>
+    <string name="navi_end_address_erro">终点错误</string>
+    <string name="navi_start_address_erro">起点错误</string>
+    <string name="navi_no_endaddress">终点没有找到道路</string>
+    <string name="navi_no_startaddress">起点没有找到道路</string>
+    <string name="navi_no_rout_point">途径点没有找到道路</string>
+    <string name="navi_protocle_erro">协议解析错误</string>
+    <string name="navi_permissions">无权限访问此服务</string>
+    <string name="navi_request_parameter_illegal">请求参数非法</string>
+    <string name="navi_user_illegal">用户key非法或过期</string>
+    <string name="navi_request_exceeded">请求超出配额</string>
+    <string name="navi_request_unexit">请求服务不存在</string>
+    <string name="navi_request_res_erro">请求服务响应错误</string>
+    <string name="navi_rute_sucess">路径计算成功</string>
+    <string name="navi_unkown_erro">未知错误</string>
+    <string name="navi_currant_road">当前道路》》</string>
+    <string name="navi_next_road">;下条路名》》</string>
+    <string name="navi_residual_distance">;路线剩余距离》》</string>
+    <string name="navi_residual_time">;取路线剩余时间  》》</string>
+    <string name="navi_steering_icon">:导航转向图标>></string>
+    <string name="navi_last_residual_distance">:前路段剩余距离</string>
+    <string name="navi_km_left">公里后</string>
+    <string name="navi_m_left">米后</string>
+    <string name="navi_km">公里</string>
+    <string name="navi_m">米</string>
+    <string name="navi_from_enter">从" %1$s "进入</string>
+    <string name="navi_next_enter">进入" %1$s "</string>
+    <string name="navi_walk_suggest">距离较近建议步行</string>
+    <string name="navi_most_quick">最快</string>
+    <string name="navi_most_short">最短</string>
+    <string name="navi_most_economical">最经济</string>
+    <string name="str_monday">星期一</string>
+    <string name="str_tuesday">星期二</string>
+    <string name="str_wednesday">星期三</string>
+    <string name="str_thursday">星期四</string>
+    <string name="str_friday">星期五</string>
+    <string name="str_saturday">星期六</string>
+    <string name="str_sundays">星期日</string>
+    <string name="str_one">一</string>
+    <string name="str_two">二</string>
+    <string name="str_three">三</string>
+    <string name="str_four">四</string>
+    <string name="str_five">五</string>
+    <string name="str_six">六</string>
+    <string name="str_sun">日</string>
+    <string name="str_open_gps">请打开GPS</string>
+    <string name="str_exit_rout">退出预览</string>
+    <string name="str_rout_whole">预览全程</string>
+    <string name="str_exit">退出</string>
+    <string name="str_login">登录</string>
+    <string name="str_license_added">该车牌已被添加！</string>
+    <string name="str_my_car_license">我的车主卡</string>
+    <string name="str_get_car_wash_step4">还差四步即可获得洗车券啦</string>
+    <string name="str_get_car_wash_step2">还差两步即可获得洗车券啦</string>
+    <string name="str_get_car_wash_step1">还差三步即可获得洗车券啦</string>
+    <string name="str_sorry">非常抱歉，</string>
+    <string name="str_not_get_car_information">暂时查不到您的车辆记录</string>
+    <string name="str_have_get_car_wash">您本月已经领取过洗车券啦！</string>
+    <string name="str_get_car_wash_success">"恭喜！\n恭喜，您已成功领取一张优惠券啦！"</string>
+    <string name="str_unkhow_author">未知作者</string>
+    <string name="str_unkhow">unknown</string>
+    <string name="str_anonymouse">佚名</string>
+    <string name="str_all_songs">全部歌曲</string>
+    <string name="local_album_no_music">这个歌单里面没有歌曲</string>
+    <string name="local_you_select_music">你可以挑一些歌曲添加到这里</string>
+    <string name="local_add_music">添加歌曲</string>
+    <string name="local_album_name">歌单名称</string>
+    <string name="delete_album">确定删除歌单吗？</string>
+    <string name="delete_local_album_list">确定删除曲目吗？</string>
+    <string name="str_parking_lots_num">总车位:</string>
+    <string name="str_price">价格：</string>
+    <string name="str_price_param">元/小时</string>
+    <string name="str_clean_all_offline_cache">清除全部离线缓存?</string>
+    <string name="str_exit_app">退出应用程序</string>
+    <string name="str_exit_navi">是否退出导航?</string>
+    <string name="str_clean_all">全部清除</string>
+    <string name="str_clean_all_history">清除全部历史记录</string>
+    <string name="str_clean_car_information">删除当前车辆信息?</string>
+    <string name="go_setting">去设置</string>
+    <string name="open_location_permission">检测到您没有开启定位权限，请到设置开启</string>
+
+    <string name="str_not_exit_file">该文件已经删除！</string>
+
+
+    <string name="setting_help">新手教程</string>
+    <string name="help_warn">开启“USB调试”连接手机</string>
+    <string name="help_step1">1.点击进入设置</string>
+    <string name="help_step2">2.点击开发者选项</string>
+    <string name="help_step3">3.开启开发者选项</string>
+    <string name="help_step4">4.开启USB调试</string>
+    <string name="help_connect_title">连接帮助</string>
+
+
+    <string name="qq_use_warn">请确保QQ音乐已经开启车载模式，\n首次数据同步需要确认</string>
+    <string name="qq_install_warn">检测到您还没有安装QQ音乐，\n请先安装最新版QQ音乐</string>
+    <string name="yellow_page">黄页</string>
+    <string name="voice_help">语音帮助</string>
+    <string name="function_introduce">功能介绍</string>
+    <string name="common_tel">常见电话</string>
+    <string name="route_help_tel">道路救援</string>
+    <string name="insurance_tel">保险公司电话</string>
+    <string name="str_close_navi" >结束导航</string>
+    <string name="str_all_start" >全部开始</string>
+    <string name="route_search_no" >沿途没有你要搜索的兴趣点</string>
+    <string name="search_near" >搜索周边</string>
+    <string name="tohere" >去这里</string>
+
+    <!--setting-->
+    <string name="ecolink_title">ecolink互联</string>
+    <string name="ecolink_slogan">让车载移动互联更加简单</string>
+    <string name="ecolink_feature_first">拥有手机车机互联自主知识产权</string>
+    <string name="ecolink_feature_second">完美的支持Ios，Android双系统</string>
+    <string name="ecolink_feature_third">黑科技加持，当前最快互联科技</string>
+    <string name="ecolink_feature_fourth">覆盖全车载系统的移动互联科技</string>
+    <string name="ecolink_vehicle_type">适配车型</string>
+    <string name="ecolink_vehicle_first">蓝宝电子</string>
+    <string name="ecolink_vehicle_second">诺威达</string>
+    <string name="ecolink_vehicle_third">ax3</string>
+    <string name="ecolink_vehicle_fourth">eu260</string>
+    <string name="ecolink_vehicle_fifth">s7</string>
+    <string name="ecolink_vehicle_sixth">ax5</string>
+    <string name="ecolink_vehicle_seventh">宋</string>
+    <string name="ecolink_vehicle_eighth">元</string>
+
+    <string name="thincar_title">轻车机</string>
+    <string name="thincar_step_first">1.确认乐车盒已经连接电源</string>
+    <string name="thincar_step_second">2.点击下方“去连接”，在系统设置中打开蓝牙，并连接“Le AutoKits 1S”</string>
+    <string name="thincar_no_thincar">我还没有轻车机,</string>
+    <string name="thincar_buy">点击购买</string>
+    <string name="thincar_link">去连接</string>
+    <string name="thincar_help">"i"</string>
+    <string name="thincar_help_first">锁屏状态</string>
+    <string name="thincar_help_second">左右键：切换歌曲</string>
+    <string name="thincar_help_third">长按上下键：音量＋/－</string>
+    <string name="thincar_help_fourth">功能键：音乐播放/暂停</string>
+
+    <!-- bugly更新对话框-->
+    <string name="upgrade_bugly_title">发现新版本，是否更新？</string>
+    <string name="upgrade_bugly_cancel">下次再说</string>
+    <string name="upgrade_bugly_ok">立即更新</string>
+
+</resources>

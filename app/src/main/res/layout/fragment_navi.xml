@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:background="@color/background_main"
+        android:id="@+id/common_road_layout"
+        android:layout_width="@dimen/size_220dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/gps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp">
+            <ImageView
+                android:id="@+id/gps_img"
+                android:layout_width="@dimen/size_12dp"
+                android:layout_height="@dimen/size_12dp"
+                android:layout_marginRight="@dimen/size_4dp"
+                android:scaleType="center"
+                android:layout_toLeftOf="@+id/gps_num"
+                android:src="@mipmap/navi_start_satellite_weak"/>
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/gps_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_16dp"
+                android:text="0"
+                android:textColor="#2db8a0"
+                android:textSize="@dimen/size_12sp"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/distance"
+            android:layout_below="@+id/gps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_2dp"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/turn_rest_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_30sp"
+                android:text="2000"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/size_5dp"
+                android:id="@+id/turn_rest_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/navi_m_left"
+                android:textColor="@color/transparent_60"
+                android:textSize="@dimen/size_12sp"/>
+
+        </LinearLayout>
+
+
+
+        <com.amap.api.navi.view.NextTurnTipView
+            android:layout_below="@+id/distance"
+            android:id="@+id/next_turn_view"
+            android:layout_width="@dimen/size_75dp"
+            android:layout_height="@dimen/size_75dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_centerHorizontal="true"
+            ></com.amap.api.navi.view.NextTurnTipView>
+        <TextView
+            android:id="@+id/enter"
+            android:layout_below="@+id/next_turn_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_centerHorizontal="true"
+            android:text="进入"
+            android:textColor="@color/transparent_60"
+            />
+        <TextView
+            android:layout_below="@+id/enter"
+            android:id="@+id/next_road_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:textSize="@dimen/size_24sp"
+            android:textColor="@color/white"
+            android:text="北四环东路辅路"/>
+
+        <TextView
+            android:id="@+id/continue_navi"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/navi_btn_bg"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:gravity="center"
+            android:text="继续导航"
+            android:textSize="@dimen/size_16sp"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+        <RelativeLayout
+            android:id="@+id/rest_predict_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:visibility="visible">
+            <RelativeLayout
+                android:id="@+id/rest_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone">
+                <TextView
+                    android:layout_marginLeft="@dimen/size_20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剩余"
+                    android:id="@+id/rest_title"
+                    android:textSize="@dimen/size_12sp"
+                    android:textColor="@color/transparent_60"/>
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/size_20dp"
+                    android:id="@+id/rest_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textSize="@dimen/size_16sp"
+                    android:textColor="@color/transparent_60"/>
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/size_20dp"
+                    android:layout_below="@+id/rest_time"
+                    android:id="@+id/rest_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_16sp"
+                    android:textColor="@color/transparent_60"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/predict_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible"
+
+                >
+
+                <TextView
+                    android:layout_marginLeft="@dimen/size_20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预计"
+                    android:id="@+id/predict_title"
+                    android:textSize="@dimen/size_12sp"
+                    android:textColor="@color/transparent_60"/>
+                <TextView
+                    android:layout_toLeftOf="@+id/predict_distance"
+                    android:layout_marginRight="@dimen/size_20dp"
+                    android:id="@+id/predict_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="12"
+                    android:textSize="@dimen/size_16sp"
+                    android:textColor="@color/transparent_60"/>
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/size_20dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/predict_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到达"
+                    android:textSize="@dimen/size_16sp"
+                    android:textColor="@color/transparent_60"
+                    android:visibility="visible"/>
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_toRightOf="@+id/common_road_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <com.amap.api.navi.AMapNaviView
+
+            android:id="@+id/navi_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            />
+
+        <RelativeLayout
+            android:layout_width="@dimen/size_220dp"
+            android:layout_height="130dp"
+            android:id="@+id/cross_road_layout"
+            android:background="@color/background_main"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/cross_gps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_8dp">
+                <ImageView
+                    android:id="@+id/cross_gps_img"
+                    android:layout_width="@dimen/size_12dp"
+                    android:layout_height="@dimen/size_12dp"
+                    android:layout_marginRight="@dimen/size_4dp"
+                    android:scaleType="center"
+                    android:layout_toLeftOf="@+id/cross_gps_num"
+                    android:src="@mipmap/navi_start_satellite_weak"/>
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/cross_gps_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/size_16dp"
+                    android:text="0"
+                    android:textColor="#2db8a0"
+                    android:textSize="@dimen/size_12sp"/>
+
+            </RelativeLayout>
+
+
+
+
+            <com.amap.api.navi.view.NextTurnTipView
+                android:layout_below="@+id/cross_gps"
+                android:id="@+id/cross_next_turn_view"
+                android:layout_width="@dimen/size_50dp"
+                android:layout_height="@dimen/size_50dp"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:src="@mipmap/delete_icon"
+                ></com.amap.api.navi.view.NextTurnTipView>
+            <LinearLayout
+                android:id="@+id/cross_distance"
+                android:layout_alignTop="@+id/cross_next_turn_view"
+                android:layout_alignBottom="@id/cross_next_turn_view"
+                android:layout_toRightOf="@+id/cross_next_turn_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+
+                    android:id="@+id/cross_turn_rest_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_30sp"
+                    android:text="2000"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/size_5dp"
+                    android:id="@+id/cross_turn_rest_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/navi_m_left"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:textColor="@color/transparent_60"
+                    android:textSize="@dimen/size_12sp"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_below="@+id/cross_next_turn_view"
+                android:id="@+id/cross_next_road_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:textSize="@dimen/size_24sp"
+                android:textColor="@color/white"
+                android:text="北四环东路辅路"/>
+
+        </RelativeLayout>
+        <com.amap.api.navi.view.ZoomInIntersectionView
+            android:scaleType="fitXY"
+            android:id="@+id/cross_view"
+            android:layout_below="@+id/cross_road_layout"
+            android:layout_width="@dimen/size_220dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_above="@+id/zoom_view"
+            android:layout_alignParentRight="true"
+            android:id="@+id/preview_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/navi_preview"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+
+            />
+
+        <com.letv.leauto.ecolink.ui.view.EcoZoomButtonView
+            android:layout_above="@+id/setting_view"
+            android:id="@+id/zoom_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_10dp"
+            ></com.letv.leauto.ecolink.ui.view.EcoZoomButtonView>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/setting_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/navi_start_setting"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:layout_marginBottom="@dimen/size_10dp"
+            ></ImageView><!--//路况按钮-->
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/exit_navi_image"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/navi_close"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size_10dp"
+
+            android:layout_toRightOf="@+id/cross_road_layout"
+
+            />
+        <com.amap.api.navi.view.DirectionView
+            android:layout_toRightOf="@+id/cross_road_layout"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:id="@+id/direction_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/exit_navi_image"
+            android:src="@mipmap/car_up_mode"
+            android:layout_marginBottom="@dimen/size_10dp"
+
+            ></com.amap.api.navi.view.DirectionView>
+
+        <ImageView
+            android:layout_toRightOf="@+id/cross_road_layout"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/limit_speed_red"
+            android:id="@+id/navi_speed_img"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/navi_speed_img"
+            android:layout_alignRight="@+id/navi_speed_img"
+            android:layout_alignTop="@id/navi_speed_img"
+            android:layout_alignBottom="@id/navi_speed_img"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:text="20"
+                android:textSize="@dimen/size_24sp"
+                android:textColor="@color/black"
+                android:id="@+id/navi_speed_text"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/speed_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="km/h"
+                android:textSize="@dimen/size_12sp"
+                android:textColor="@color/black_85"/>
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/traffic"
+            android:layout_toRightOf="@+id/cross_road_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/traffic_open_night"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_below="@+id/navi_speed_img"/>
+
+
+
+
+
+        <com.letv.leauto.ecolink.ui.view.MyTrafficBar
+            android:id="@+id/myTrafficBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="@dimen/size_12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/size_12dp" />//自定义光柱
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/way_point_layout"
+            android:layout_toRightOf="@+id/cross_road_layout"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="@drawable/navi_park_layout_bg"
+            android:layout_height="@dimen/size_56dp">
+            <TextView
+                android:id="@+id/way_point_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="新保利大厦停车场"
+                android:layout_alignParentLeft="true"
+                android:maxLines="1"
+                android:layout_toLeftOf="@+id/way_point_setbutton"
+                android:layout_marginRight="@dimen/size_10dp"
+                />
+            <TextView
+                android:id="@+id/way_point_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/way_point_name"
+                android:textSize="@dimen/size_12sp"
+                android:textColor="@color/black_60"
+                android:layout_marginTop="@dimen/size_7dp"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:text="56m"/>
+            <TextView
+                android:id="@+id/way_point_setbutton"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/size_100dp"
+                android:layout_height="@dimen/size_30dp"
+                android:background="@drawable/way_point_bg"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:textSize="@dimen/size_16sp"
+                android:textColor="@color/black_60"
+                android:text="设为途经点"
+                android:gravity="center"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:background="@drawable/navi_park_layout_bg"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/parking_layout"
+            android:layout_toRightOf="@+id/cross_road_layout"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:visibility="gone">
+            <LinearLayout
+                android:id="@+id/parks"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_15dp"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_30dp"
+                android:background="@drawable/infowindow_bg">
+
+                <TextView
+                    android:id="@+id/park1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/size_16sp"
+                    android:textColor="@color/black"
+                    android:text="P1"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:id="@+id/diver1"
+                    android:orientation="vertical"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/title_dividing_line"
+                    android:layout_marginTop="@dimen/size_3dp"
+                    android:layout_marginBottom="@dimen/size_3dp"></LinearLayout>
+                <TextView
+                    android:id="@+id/park2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/size_16sp"
+                    android:textColor="@color/black"
+                    android:text="P2"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:id="@+id/diver2"
+                    android:orientation="vertical"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/title_dividing_line"
+                    android:layout_marginTop="@dimen/size_3dp"
+                    android:layout_marginBottom="@dimen/size_3dp"></LinearLayout>
+                <TextView
+                    android:id="@+id/park3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/size_16sp"
+                    android:textColor="@color/black"
+                    android:text="P3"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/parkname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="新保利大厦停车场"
+                android:textStyle="bold"
+                android:layout_below="@+id/parks"/>
+            <TextView
+                android:id="@+id/park_distance"
+                android:layout_below="@+id/parkname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/size_12sp"
+                android:textColor="@color/black_60"
+                android:text="58米"
+                />
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:layout_marginLeft="@dimen/size_40dp"
+                android:layout_width="@dimen/size_150dp"
+                android:layout_height="@dimen/size_30dp"
+                android:background="@drawable/way_point_bg"
+                android:id="@+id/cancel_park"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_16sp"
+                    android:textColor="@color/black_85"
+                    android:text="取消"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/size_2dp"
+                    android:id="@+id/park_cancel_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_16sp"
+                    android:textColor="@color/black_85"
+                    android:text="5s"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/park_here"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size_40dp"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/size_30dp"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:textSize="@dimen/size_16sp"
+                android:textColor="@color/black_85"
+                android:gravity="center"
+                android:background="@drawable/way_point_bg"
+                android:text="停这里"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试"
+        android:id="@+id/test"
+        android:visibility="gone"/>
+</RelativeLayout>

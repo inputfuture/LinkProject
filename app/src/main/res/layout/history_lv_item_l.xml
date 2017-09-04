@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/item_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_60dp"
+        android:background="@drawable/item_single_selector">
+
+        <ImageView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:src="@mipmap/map_ic_clock"  />
+
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:layout_toRightOf="@+id/type"
+            android:layout_toLeftOf="@+id/right"
+            android:layout_centerVertical="true"
+            android:imeOptions="actionSearch|flagNoExtractUi"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@drawable/text_click_selector"
+            android:text="地址"
+            android:textSize="@dimen/size_18sp" />
+        <LinearLayout
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/img_arraw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/map_ic_add" />
+            <TextView
+                android:id="@+id/to_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去这里"
+                android:textColor="@color/transparent_60"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/title_dividing_line"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/size_20dp"></LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

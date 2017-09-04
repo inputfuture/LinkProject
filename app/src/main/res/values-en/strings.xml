@@ -1,0 +1,482 @@
+﻿<resources>
+    <string name="app_name">LeAutolink</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- 主页菜单-->
+    <string name="main_nav_map">Navigation</string>
+    <string name="main_nav_music">LeRadio</string>
+    <string name="main_nav_localmusic">Local Music</string>
+    <string name="main_nav_wechat">Wechat</string>
+    <string name="main_nav_dial">Phone</string>
+    <string name="main_nav_live">LIVE</string>
+    <string name="main_nav_levedio">Le</string>
+    <string name="main_nav_setting">Settings</string>
+    <string name="main_nav_tingjiandan">Easy Parking</string>
+    <string name="main_nav_kuwo">Kuwo</string>
+    <string name="main_nav_local">Local</string>
+    <string name="main_kuwo_music">Kuwo Music</string>
+    <string name="main_local_music">Local Music</string>
+    <string name="main_nav_magical">Magic</string>
+    <string name="main_nav_collection">Favorites</string>
+    <string name="main_nav_recent">Recent</string>
+    <string name="main_nav_baidu_map">Baidu Maps</string>
+    <string name="main_nav_gaode_map">AutoNavi</string>
+    <string name="main_nav_baidu_navi">Baidu navigation</string>
+    <string name="main_nav_gaode_navi">Gaode navigation</string>
+    <string name="voice_navi">You can say:</string>
+    <string name="vr_mul_result">Multiple results found. Please select:</string>
+    <string name="main_not_install_weixin">WeChat not installed on your phone</string>
+    <string name="main_not_install_gaode">AutoNavi not installed on your phone</string>
+    <string name="main_not_install_baidu">Baidu Maps not installed on your phone</string>
+    <string name="main_download_letv_live">Start to download Le Live</string>
+    <string name="main_download_letv_video">Start to download Le</string>
+    <string name="main_is_download_letv_live">Download Le Live?</string>
+    <string name="main_is_download_letv_video">Download Le?</string>
+    <string name="main_calling_not_support_voice">Audio function not supported during call</string>
+    <string name="main_is_tingjiandan_navi">Easy Parking navigation in progress.</string>
+    <!-- music-->
+    <string name="music_no_local_data">You do not have any local audio file</string>
+    <string name="music_no_favor_data">You have not added any audio files to Favorites</string>
+    <string name="music_no_recent_data">You have not listened to any audio file</string>
+    <string name="music_no_download_data">You have not downloaded any audio file</string>
+    <string name="music_download_bt_hint">Turn on Magic Download</string>
+    <string name="music_download_bt_hint_opened">Magic Download On</string>
+    <string name="music_download_hint">Once turned on, ecolink will\n&#160;&#160;&#160;&#160;&#160;&#160;automatically download the content you added to favorites</string>
+
+    <string name="msg_no_net">Network connection is slow, \n we recommend that you listen to local content or use Magic Download</string>
+    <string name="msg_bad_net">Playback error\n Please try again later</string>
+    <string name="toast_no_wchart">Wechat not installed on your phone.</string>
+    <string name="toast_no_letvclient">Please download and install Le client.</string>
+    <string name="wait_download">Waiting to download.</string>
+    <string name="click_resume_download">Tap to resume</string>
+    <string name="un_define_name">Unnamed</string>
+    <string name="str_all_pause">Pause all</string>
+    <string name="str_all_play">Play all</string>
+    <string name="str_on_downloading">Downloading</string>
+    <string name="str_not_collection">You have no items in Favorites</string>
+    <string name="str_live_doing">Live stream in progress</string>
+    <string name="str_live_not_start">Not started</string>
+    <string name="str_copration_media">Media partner:</string>
+    <string name="str_paly_erro">Playback error</string>
+
+    <string name="music_lable_hot">Popular</string>
+    <string name="music_lable_my">Mine</string>
+    <string name="music_lable_talkshow">Talk show</string>
+    <string name="music_lable_live">Live</string>
+    <string name="music_lable_music">Music</string>
+    <string name="music_lable_Funny">Funny</string>
+    <string name="music_lable_story">Novel</string>
+    <string name="music_lable_Crosstalk">Cross talk</string>
+    <string name="music_lable_emotion">Relationship</string>
+    <string name="music_lable_children">Kids</string>
+
+    <string name="musice_live_list">List of live streams</string>
+    <!-- voice-->
+    <string name="vr_music_tip_one">Play "Forget Love Potion"</string>
+    <string name="vr_music_tip_two">Guo Degang</string>
+    <string name="vr_music_tip_three">Guo Degang</string>
+    <string name="vr_map_tip_one">LeEco Building</string>
+    <string name="vr_map_tip_two">I want to go to Tian anmen Square</string>
+    <string name="vr_map_tip_three">Gas stations nearby</string>
+    <string name="vr_map_tip_four">Bank nearby</string>
+    <string name="vr_call_tip_one">Call David</string>
+    <string name="vr_call_tip_two">Call 10086</string>
+    <string name="vr_call_tip_three">Call KFC</string>
+    <string name="vr_other_tip_one">Today\'s weather</string>
+    <string name="vr_other_tip_two">I want to listen to some comedy shows</string>
+    <string name="vr_other_tip_three">Tell me a joke</string>
+    <string name="vr_can_not_find">No results</string>
+    <string name="vr_reTry">Please try again</string>
+
+    <!-- 语音识别-->
+    <string name="waiting_data">Searching...</string>
+    <string name="open_download">Turn on Magic Download</string>
+    <string name="status">Status:</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="start">Start</string>
+    <string name="volume">Volume</string>
+    <string name="start_dialog">Call up voice recognition dialog box</string>
+    <string name="error_start">Unable to launch: 0x%1$s</string>
+    <string name="in_recog">Recognizing</string>
+    <string name="please_speak">Please speak</string>
+    <string name="speaking">Speaking</string>
+    <string name="tofinish">Done</string>
+    <string name="setting">Settings</string>
+    <string name="str_history">History</string>
+    <string name="history_recode">History</string>
+    <string name="clear_history">Clear history</string>
+    <string name="delete_success">Deleted successfully</string>
+    <string name="str_no_colleaction">No albums in Favorites</string>
+    <string name="str_not_listen">You have not listened before</string>
+
+    <string name="check_network">Unable to connect to network</string>
+    <string name="str_voice_recognaize_faild">Recognition failed, please click on the mic to try again!</string>
+    <string name="str_voice_listen_faild">I did not hear that clearly, please click on the mic to try again!</string>
+    <string name="str_voice_retry">Please click on the mic to try again!</string>
+    <string name="str_voice_restart">Click to restart</string>
+    <string name="str_voice_serching">Searching</string>
+    <string name="str_voice_help">Hi! What can I help you with?</string>
+    <string name="str_voice_serch_null">No results found</string>
+    <string name="str_voice_listening">Listening</string>
+    <string name="str_voice_recognizing">Recognizing</string>
+    <string name="str_voice_search_result">We found the following results for you:</string>
+    <string name="str_voice_check_record_permition">Please check your recording permission</string>
+    <string name="str_voice_click_check">Click to check permission</string>
+    <string name="str_voice_limit_permition">No permission granted</string>
+    <string name="str_voice_check_permition">Please check permission</string>
+    <string name="str_voice_recognize_faild">Recognition failed</string>
+    <string name="str_voice_tmeout">Connection timed out</string>
+    <string name="str_voice_check_network">Click to check network settings</string>
+    <string name="str_voice_part_result">~Temporary recognition result:</string>
+    <string name="str_voice_shwich_tts">*Engine switched to</string>
+    <string name="str_voice_online">Online</string>
+    <string name="str_voice_offline">Offline</string>
+    <string name="str_voice_reparing">Preparing</string>
+    <string name="str_voice_network_erro">Network problem</string>
+    <string name="str_voice_no_input">No voice input</string>
+    <!-- map-->
+    <string name="map_home">Go home</string>
+    <string name="map_work">Company</string>
+    <string name="easy_stop_here">Park here</string>
+
+    <string name="map_no_history1">No place recordedYou currently do not have any \nPlaces</string>
+    <string name="map_no_history">You currently do not have any \nPlaces</string>
+    <string name="map_route_start_navi">Start navigation</string>
+    <string name="map_search_destination">Please add your company address</string>
+    <string name="map_search_home">Please add your home address</string>
+    <string name="map_navi_destination">Please enter destination</string>
+    <string name="map_error_network">Search failed. Please check the network connection!</string>
+    <string name="map_error_key">Invalid key!</string>
+    <string name="map_eror_other">Unknown error, please try again later! Error code:</string>
+    <string name="click_start_seatch">Tap to search</string>
+    <string name="map_no_result">Sorry, no relevant data found!</string>
+    <string name="map_choose_way">Route selection</string>
+    <string name="map_arrived">Arrived at the destination</string>
+    <string name="map_get_way_faild">Route calculating failed. Please check the network connection or enter parameters</string>
+    <string name="map_get_way_ready">Route calculation ready</string>
+    <string name="map_navi_end">Navigation complete</string>
+    <string name="map_change_way">Heavy traffic ahead, re-calculating route</string>
+    <string name="map_naviway_dispach">You are off-course</string>
+
+    <!-- offlinemap -->
+
+    <string name="all_offline">City list</string>
+    <string name="download_offline">Downloaded</string>
+    <string name="str_download">Download</string>
+    <string name="str_downloading">Downloading</string>
+    <string name="download_error">Download error</string>
+    <string name="download_comlitely">Download completed</string>
+    <string name="download_resume">Continue to download</string>
+    <string name="download_waiting">Waiting</string>
+    <string name="download_pause">Pause</string>
+    <string name="download_update">Update</string>
+    <string name="download_have_update">Update available</string>
+    <string name="can_update">You may update at this moment</string>
+    <string name="download_wifi_only">No Wi-Fi connection; you can only update in Wi-Fi environment</string>
+    <string name="download_check_update">Check for update</string>
+    <string name="download_manage">Manage downloads</string>
+    <string name="download_unPackage">Extracting:</string>
+    <string name="download_unPackageing">Decompressing...</string>
+    <string name="download_connect_faild">Failed to connect</string>
+    <string name="download_unPackage_faild">Decompression error</string>
+    <string name="download_unPackage_cannot_delete">Extracted files cannot be deleted</string>
+    <string name="download_installed">Installed</string>
+    <string name="str_Whole_country">Nationwide</string>
+    <string name="str_directly_Municipality">Municipality</string>
+    <string name="str_hm">Hong Kong and Macao</string>
+    <string name="str_Province">Province</string>
+
+    <string name="weather_live">Real-time</string>
+    <string name="weather_forecast">Forecast</string>
+    <string name="report_time">Release time</string>
+    <string name="location_share">Location sharing</string>
+    <string name="delete">Delete</string>
+    <string name="lots_manage">Batch management</string>
+    <string name="all_checked">Select all</string>
+    <string name="manager">Manage</string>
+
+    <!-- weather -->
+    <string name="weather_sunny" translatable="false">Sunny</string>
+    <string name="weather_sunny_night" translatable="false">Fine at night</string>
+    <string name="weather_cloudy" translatable="false">Cloudy</string>
+    <string name="weather_cloudy_night" translatable="false">Cloudy at night</string>
+    <string name="weather_shade" translatable="false">Overcast</string>
+    <string name="weather_hail" translatable="false">Hail</string>
+    <string name="weather_thunderstorm" translatable="false">Thunderstorm</string>
+    <string name="weather_thunderstorm_with_hail" translatable="false">Thunderstorm and hail</string>
+    <string name="weather_shower" translatable="false">Shower</string>
+    <string name="weather_shower_night" translatable="false">Shower at night</string>
+    <string name="weather_sleet" translatable="false">Sleet</string>
+    <string name="weather_light_rain" translatable="false">Light rain</string>
+    <string name="weather_rain" translatable="false">Moderate rain</string>
+    <string name="weather_heavy_rain" translatable="false">Heavy rain</string>
+    <string name="weather_rain_storm" translatable="false">Rainstorm</string>
+    <string name="weather_light_rain2" translatable="false">Light to moderate rain</string>
+    <string name="weather_rain2" translatable="false">Moderate to heavy rain</string>
+    <string name="weather_heavy_rain2" translatable="false">Heavy rain to storm</string>
+    <string name="weather_rain_storm2" translatable="false">Heavy storm</string>
+    <string name="weather_rain_storm3" translatable="false">Very heavy storm</string>
+    <string name="weather_rain_storm4" translatable="false">Storm to heavy storm</string>
+    <string name="weather_rain_storm5" translatable="false">Heavy storm to very heavy storm</string>
+    <string name="weather_snow_shower" translatable="false">Snow shower</string>
+    <string name="weather_snow_shower_night" translatable="false">Snow at night</string>
+    <string name="weather_light_snow" translatable="false">Light snow</string>
+    <string name="weather_snow" translatable="false">Moderate snow</string>
+    <string name="weather_heavy_snow" translatable="false">Heavy snow</string>
+    <string name="weather_blizzard" translatable="false">Snowstorm</string>
+    <string name="weather_light_snow2" translatable="false">Light to moderate snow</string>
+    <string name="weather_snow2" translatable="false">Moderate to heavy snow</string>
+    <string name="weather_heavy_snow2" translatable="false">Heavy snow to snowstorm</string>
+    <string name="weather_fog" translatable="false">Fog</string>
+    <string name="weather_sleet2" translatable="false">Freezing rain</string>
+    <string name="weather_sandstorm" translatable="false">Sandstorm</string>
+    <string name="weather_heavy_sandstorm" translatable="false">Heavy sand storm</string>
+    <string name="weather_sand" translatable="false">Dust</string>
+    <string name="weather_dust" translatable="false">Dust particles</string>
+    <string name="weather_haze" translatable="false">Haze</string>
+    <string name="weather_unknown" translatable="false">Unknown</string>
+    <string name="weather_cold">Low temperature</string>
+    <string name="weather_hot">High temperature</string>
+    <string name="net_mobile_msg">You are currently using cellular data</string>
+
+    <string name="play_list">Playlist</string>
+    <string name="edit_album">Editing programs</string>
+    <string name="complete">Done</string>
+    <string name="data_download_warn">2G/3G/4G download will consume data</string>
+    <string name="no_net">No network. Check your network settings</string>
+    <string name="user_nets_download">Use 2G/3G/4G network to download?</string>
+    <string name="user_nets_paly">Use 2G/3G/4G network to play?</string>
+    <string name="fourg_open_download">To protect your data, you need to switch on 2G/3G/4G network download option to download</string>
+    <string name="fourg_open_play">To protect your data, you need to switch on 2G/3G/4G network download option to play</string>
+    <string name="fourg_download_warn">You are currently on 2G/3G/4G \nnetwork, downloading for offline use will consume data</string>
+    <string name="continue_download">Continue to download</string>
+    <string name="vehicle_mess">Vehicle information</string>
+    <string name="vehicle_main">My main vehicle (Jing Q A0000)</string>
+    <string name="myvehicle">My main vehicle</string>
+    <string name="vehicle_choose_first">Brand selection</string>
+    <string name="vehicle_mess_type">Vehicle Model:</string>
+    <string name="vehicle_mess_type_ini">FAW Audi A6L 2016 TFSI</string>
+    <string name="vehicle_save">Save</string>
+    <string name="vehicle_mess_card">License plate number:</string>
+    <string name="vehicle_mess_cardnum_ini">Beijing</string>
+    <string name="vehicle_mess_num_ini">Please enter license plate number</string>
+    <string name="vehicle_mess_num_error">Input error! Please try again</string>
+    <string name="vehicle_mess_get_num_first">Initial registration date:</string>
+    <string name="vehicle_mess_date_input">Please enter a date</string>
+    <string name="vehicle_mess_now_distance">Current mileage:</string>
+    <string name="vehicle_mess_distance_input">Please enter mileage</string>
+    <string name="vehicle_mess_last_dating">Last insurance start date:</string>
+    <string name="vehicle_mess_date_choose">Please select a date</string>
+    <string name="vehicle_mess_last_wash">Last service date:</string>
+    <string name="phone_num">Mobile number:</string>
+    <string name="phone_num_input">Please enter mobile number</string>
+    <string name="makesure">Confirm</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="hour">Hour</string>
+    <string name="minute">Minute</string>
+    <string name="vehicle_maintain">I want to service my car</string>
+    <string name="vehicle_shop">I want to sell my car</string>
+    <string name="vehicle_violation">Traffic violation record look-up</string>
+    <string name="vehicle_violation_mechine_num">Engine number:</string>
+    <string name="vehicle_violation_mechine_num_input">Please enter the complete engine number</string>
+    <string name="vehicle_violation_car_num">Vehicle Identification Number (VIN)</string>
+    <string name="vehicle_violation_car_num_input">Please enter the last six digits of the VIN</string>
+    <string name="vehicle_violation_area">Region look-up</string>
+    <string name="vehicle_violation_choose_province">Province/City</string>
+    <string name="all">All</string>
+    <string name="is_new">You have the latest version</string>
+    <string name="upgrade_title">Update</string>
+    <string name="downloading_message">Download the update package</string>
+    <string name="cancel_download">Cancel download</string>
+    <string name="upgrade_message_from_server">Update from server</string>
+    <string name="upgrade_message_from_local">Update locally</string>
+    <string name="update_fail_server">Failed to update from server</string>
+    <string name="update_fail_client">Failed to update from client</string>
+    <string name="show_add">Add vehicle information to win a car-washing voucher</string>
+    <string name="edit">Edit</string>
+    <string name="click_toadd">Click to add vehicle</string>
+
+    <string name="net_not_good">Poor network connection</string>
+    <string name="refresh_try">Refresh to try again</string>
+    <string name="local_to_see">View local content</string>
+
+    <string name="about">About</string>
+    <!--<string name="notification"><u>《LeAutolink Service Terms》</u></string>-->
+    <string name="notification">《LeAutolink Service Terms》</string>
+    <string name="disclaimer_title">Disclaimer</string>
+    <string name="str_access">Agree</string>
+    <string name="str_never_mind">Do not show again</string>
+    <string name="str_open">Open</string>
+    <string name="mobile_download">Are you sure to allow downloading in 2G/3G/4G network environment?</string>
+    <string name="mobile_play">Are you sure to allow streaming in 2G/3G/4G network environment?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_app_title">Choose APK</string>
+    <string name="add_app">Add</string>
+    <string name="title_activity_choose_app">ChooseAppActivity</string>
+    <string name="title_activity_state_title">StateTitleActivity</string>
+    <string name="no_net_message">No network connection, please check your Internet settings</string>
+    <string name="delete_history">Are you sure to delete the viewing record?</string>
+    <string name="delete_download">Are you sure to delete the file(s)?</string>
+    <string name="no_downloading">No tasks being downloaded</string>
+    <string name="no_downloaded">You have not downloaded any content</string>
+    <string name="no_net_toast">Poor network connection, cannot get data</string>
+    <string name="no_netRes_toast">Failed to get network resources, please try again</string>
+
+    <string name="no_data_toast">No data</string>
+    <string name="null_data_toast">No data</string>
+    <string name="net_erro_toast">Network error</string>
+    <string name="connect_network_toast">Please connect to the network</string>
+    <string name="str_download_start">Start downloading</string>
+    <string name="str_uncollection">Deleted from Favorites</string>
+    <string name="str_collection_success">Added to Favorites</string>
+    <string name="str_add_to_download">Add to the download queue</string>
+
+    <string name="i_know">Got it</string>
+    <string name="str_check_coupon">View coupon</string>
+    <string name="str_unlimit">Not restricted</string>
+    <string name="str_unlimit_today">Your license plate is not under driving restriction today</string>
+    <string name="str_limit_today">Your license plate is under driving restriction today:</string>
+    <string name="str_unlimit_city">No license plate-based restriction in the current city</string>
+    <string name="str_app_limit">The apps you selected have exceeded maximum limit</string>
+
+    <string name="str_dail">Call</string>
+    <string name="str_contact">Contacts</string>
+    <string name="str_input_number_toast">Enter number</string>
+    <string name="str_station_limit_toast">Too few stops nearby. Please search again with wider range</string>
+    <string name="str_more_stop">Multiple parking lots found</string>
+    <string name="str_location_success">Successfully located</string>
+    <string name="str_location_faild">Failed to locate</string>
+    <string name="str_choose">Please select</string>
+    <string name="str_install_baidu_map">Please install Baidu Maps</string>
+    <string name="str_install_gaode_map">Please install AutoNavi</string>
+    <string name="str_no_result">No results</string>
+    <string name="str_key_erro">Invalid key</string>
+    <string name="str_nomach_address">No matching address</string>
+    <string name="str_noaddress_check_network">Failed to acquire address, please check network connections</string>
+    <string name="str_parking_lots">Parking lots</string>
+    <string name="str_gas_station">Gas stations</string>
+    <string name="str_toilets">Restrooms</string>
+    <string name="str_food">Food</string>
+    <string name="str_more_result">Multiple results found, please selection</string>
+    <string name="str_start_adress_null">Starting point is empty!</string>
+    <string name="str_end_address_null">Destination is empty!</string>
+    <string name="str_view_route">Preview the entire route</string>
+    <string name="str_navi_faild">Navigation failed, please try again.</string>
+    <string name="navi_net_timeout_or_fiald">Network timed out or network failed</string>
+    <string name="navi_end_address_erro">Destination error</string>
+    <string name="navi_start_address_erro">Starting point error</string>
+    <string name="navi_no_endaddress">No route found at destination</string>
+    <string name="navi_no_startaddress">No route found at starting point</string>
+    <string name="navi_no_rout_point">No route found at mid-way points</string>
+    <string name="navi_protocle_erro">Protocol error</string>
+    <string name="navi_permissions">You don\'t have permission to access this service</string>
+    <string name="navi_request_parameter_illegal">Invalid parameters</string>
+    <string name="navi_user_illegal">User key invalid or expired</string>
+    <string name="navi_request_exceeded">Request exceeds quota</string>
+    <string name="navi_request_unexit">Requested service does not exist</string>
+    <string name="navi_request_res_erro">Requested service response error</string>
+    <string name="navi_rute_sucess">Route calculation successful</string>
+    <string name="navi_unkown_erro">Unknown error</string>
+    <string name="navi_currant_road">Current road 》》</string>
+    <string name="navi_next_road">;Next road 》》</string>
+    <string name="navi_residual_distance">;Distance to destination 》》</string>
+    <string name="navi_residual_time">;Aquire remaining time of this route</string>
+    <string name="navi_steering_icon">:Navigation turning symbol</string>
+    <string name="navi_last_residual_distance">:Remaining distance</string>
+    <string name="navi_km_left">kilometers later</string>
+    <string name="navi_m_left">meters later</string>
+    <string name="navi_km">KM</string>
+    <string name="navi_m">M</string>
+
+    <string name="navi_from_enter">Enter From " %1$s "</string>
+    <string name="navi_next_enter">Enter" %1$s "</string>
+    <string name="navi_walk_suggest">Close to destination; walking is suggested</string>
+    <string name="navi_most_quick">Fastest</string>
+    <string name="navi_most_short">Shortest</string>
+    <string name="navi_most_economical">Cheapest</string>
+    <string name="str_monday">Monday</string>
+    <string name="str_tuesday">Tuesday</string>
+    <string name="str_wednesday">Wednesday</string>
+    <string name="str_thursday">Thursday</string>
+    <string name="str_friday">Friday</string>
+    <string name="str_saturday">Saturday</string>
+    <string name="str_sundays">Sunday</string>
+    <string name="str_one">Mon</string>
+    <string name="str_two">Tue</string>
+    <string name="str_three">Wed</string>
+    <string name="str_four">Thu</string>
+    <string name="str_five">Fri</string>
+    <string name="str_six">Sat</string>
+    <string name="str_sun">Sun</string>
+
+    <string name="str_open_gps">Turn on GPS</string>
+    <string name="str_exit_rout">Exit preview</string>
+    <string name="str_close_navi">Exit navigation</string>
+    <string name="str_rout_whole">Preview the entire route</string>
+    <string name="str_exit">Exit</string>
+    <string name="str_login">Log in</string>
+    <string name="str_license_added">The license plate has been added!</string>
+    <string name="str_my_car_license">My main vehicle</string>
+    <string name="str_get_car_wash_step4">Four more steps to get the car-washing voucher!</string>
+    <string name="str_get_car_wash_step2">Two more steps to get the car-washing voucher!</string>
+    <string name="str_get_car_wash_step1">Three more steps to get the car-washing voucher!</string>
+    <string name="str_sorry">Sorry,</string>
+    <string name="str_not_get_car_information">No record of your vehicle found</string>
+    <string name="str_have_get_car_wash">You have already claimed your car-washing voucher this month!</string>
+    <string name="str_get_car_wash_success">Congratulations! \nCongratulations, you have successfully claimed one voucher!</string>
+    <string name="str_unkhow_author">Unknown author</string>
+    <string name="str_all_songs">Play all songs</string>
+    
+    <string name="str_parking_lots_num">Total parking spaces:</string>
+    <string name="str_price">Price:</string>
+    <string name="str_price_param">RMB/Hour</string>
+    <string name="str_clean_all_offline_cache">Clear all offline cache?</string>
+    <string name="str_exit_app">Exit application</string>
+    <string name="str_exit_navi">Exit navigation?</string>
+    <string name="str_clean_all">Clear all</string>
+    <string name="str_clean_all_history">Clear all history</string>
+    <string name="str_clean_car_information">Delete current vehicle information?</string>
+
+
+    <string name="str_lemi_community">Le fans community</string>
+    <string name="str_currant_version">Currant version</string>
+    <string name="str_nav_music">Music</string>
+    <string name="str_setting_offlin_navi">Offline map</string>
+    <string name="str_setting_choose_navi_app">Select navigation app</string>
+    <string name="str_setting_screen_light">Screen Always On</string>
+    <string name="str_setting_tts">Voice broadcast</string>
+    <string name="str_setting_screen_mode">Portrait mode</string>
+    <string name="str_setting_cache">Offline catch</string>
+    <string name="str_setting_clean_catch">Clean all offline catch</string>
+    <string name="str_setting_catch_limite">Set the cache limit</string>
+    <string name="str_click_edit">click edit</string>
+    <string name="str_software_update_tip">software update tips</string>
+    <string name="str_ignore">ignore</string>
+    <string name="str_next_not_tip">not remind next time</string>
+    <string name="str_album_title">album title</string>
+    <string name="str_contact_list">Contact list</string>
+    <string name="str_music_list">music list</string>
+    <string name="str_residual">residual</string>
+    <string name="str_estimate">estimate</string>
+    <string name="str_arrived">arrived</string>
+    <string name="str_first_letter_filter">First letter filter</string>
+    <string name="str_address">Address</string>
+    <string name="str_glorious_years">Glorious years</string>
+    <string name="str_listen">Listening</string>
+    <string name="str_no_contact">No contact</string>
+    <string name="make_call">Make a call</string>
+    <string name="str_route_most_quick"> Fastest </string>
+    <string name="str_route_most_short"> Shortest </string>
+    <string name="str_route_most_economical"> Cheapest </string>
+    <string name="str_route_minute">-- minute</string>
+    <string name="str_route_km">-- km</string>
+    <string name="map_error_other">unkhown erro!</string>
+    <string name="str_all_start">Start all</string>
+
+    <string name="today_weather">Today\'s weather %1$s</string>
+    <string name="today_limit">Your license plate is under driving restriction today %1$s</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/include_ll"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:paddingLeft="@dimen/size_20dp">
+
+
+
+        <CheckBox
+            android:paddingLeft="@dimen/size_6dp"
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/checkbox_bg"
+            android:background="@color/transparent"
+
+            android:checked="false"
+            android:text="全选"
+            android:textSize="18sp"
+            android:textColor="@color/transparent_60"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:id="@+id/tv_delete"
+            android:layout_toRightOf="@id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/button_rantage_selector"
+            android:orientation="horizontal"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:src="@mipmap/delete_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="删除"
+                android:textColor="@color/transparent_60"
+                android:textSize="@dimen/textsize_16sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="80dp"
+            android:paddingRight="@dimen/size_20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|right"
+            android:text="@string/cancel"
+            android:textSize="18sp"
+            android:textColor="@color/transparent_60"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent_30"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/size_20dp">
+
+        <ListView
+            android:id="@+id/listview_mapdowner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@color/transparent_30"
+            android:scrollbarSize="@dimen/size_2dp"
+            android:scrollbarStyle="outsideOverlay"
+            >
+        </ListView>
+
+
+    </FrameLayout>
+
+</LinearLayout>

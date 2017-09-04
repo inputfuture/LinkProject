@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:id="@+id/thincar_anim_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/connect_0" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:id="@+id/tv_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:gravity="center_horizontal"
+            android:text="使用车机请保持在当前界面"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16sp" />
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_first"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:gravity="center_horizontal"
+            android:text="不要锁屏哟~"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16sp" />
+
+        <TextView
+            android:id="@+id/tv_third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_second"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:gravity="center_horizontal"
+            android:text="30S后屏幕将会自动变暗"
+            android:textColor="@color/half_white"
+            android:textSize="@dimen/size_14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:layout_width="@dimen/size_60dp"
+            android:layout_height="@dimen/size_60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/thincar_icon" />
+
+    </RelativeLayout>
+</LinearLayout>

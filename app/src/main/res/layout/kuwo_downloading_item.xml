@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_local_downloading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_select_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:button="@mipmap/song_not_selected"
+                    android:paddingBottom="@dimen/size_15dp"
+                    android:paddingRight="@dimen/size_10dp"
+                    android:paddingTop="@dimen/size_15dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/transparent_50"
+                    android:textSize="@dimen/textsize_16sp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:layout_weight="11"
+                android:maxHeight="2.0dip"
+                android:minHeight="2.0dip"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:thumb="@color/transparent"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_jindu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_3dp"
+                android:layout_marginBottom="@dimen/size_3dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="0.0B/S"
+                    android:textColor="@color/transparent_50"
+                    android:textSize="@dimen/textsize_12sp" />
+
+                <TextView
+                    android:id="@+id/tv_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="0.0MB/0.0MB"
+                    android:textColor="@color/transparent_50"
+                    android:textSize="@dimen/textsize_12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ll_name"
+                android:layout_below="@+id/ll_name"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="点击继续下载"
+                android:textColor="@color/transparent_50"
+                android:textSize="@dimen/textsize_12sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_deleteBt"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:background="@drawable/button_circle_selector"
+            android:src="@mipmap/delete_icon"
+            android:visibility="gone" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_20"/>
+</LinearLayout>

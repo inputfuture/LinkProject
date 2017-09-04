@@ -1,0 +1,250 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:background="@color/transparent_5">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size_4dp"
+            android:layout_marginRight="@dimen/size_4dp"
+            android:scaleType="center"
+            android:background="@drawable/button_circle_selector"
+            android:src="@mipmap/back_icon" />
+
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size_5dp"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:background="@color/transparent_30" />
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_toRightOf="@id/tv_line"
+            android:layout_width="match_parent"
+            android:text="@string/setting_fm"
+            android:textColor="@color/white"
+            android:layout_marginRight="56dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_thincar_help"
+            android:layout_width="@dimen/size_30dp"
+            android:layout_height="@dimen/size_30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:text="@string/thincar_help"
+            android:textAllCaps="false"
+            android:textColor="@color/setting_thincar_no"
+            android:textSize="@dimen/size_18sp"
+            android:background="@drawable/thincar_help"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fm_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/navi_bg">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="20dip"
+            android:src="@mipmap/fm_bg_l" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/iv_fm_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:padding="20dip"
+                android:src="@mipmap/fm_bg_arraw_left" />
+
+            <TextView
+                android:id="@+id/tv_fm_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:text="\??.?"
+                android:textColor="@android:color/white"
+                android:textSize="80sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_fm_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="20dip"
+                android:src="@mipmap/fm_bg_arraw_right" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_fm_bg"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:orientation="vertical"
+        android:paddingTop="20dip">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@mipmap/fm_bar" />
+
+        <SeekBar
+            android:id="@+id/seek_bar_fm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="15dip"
+            android:maxHeight="2.0dip"
+            android:minHeight="2.0dip"
+            android:progressDrawable="@android:color/white"
+            android:thumb="@mipmap/fm_bt_bar"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="87"
+                    android:textColor="@android:color/white"
+                    android:textDirection="ltr"
+                    android:textSize="25sp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="90"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@android:color/white"
+                    android:textDirection="ltr"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="95"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/white"
+                    android:textDirection="ltr"
+                    android:textSize="25sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/white"
+                    android:textDirection="ltr"
+                    android:textSize="25sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="105"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/white"
+                    android:textDirection="ltr"
+                    android:textSize="25sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="108"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/white"
+                    android:textDirection="ltr"
+                    android:textSize="25sp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_refesh_fm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/fm_bt_corner"
+            android:paddingBottom="10dip"
+            android:paddingLeft="100dip"
+            android:paddingRight="100dip"
+            android:paddingTop="10dip"
+            android:text="更新频率"
+            android:textColor="@android:color/white"
+            android:textSize="21sp" />
+    </LinearLayout>
+</LinearLayout>

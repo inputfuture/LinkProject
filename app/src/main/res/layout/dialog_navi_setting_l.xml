@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/route_set_close"
+        android:layout_centerVertical="true"/>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        android:layout_toRightOf="@id/close">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ok">
+            <LinearLayout
+                android:orientation="vertical"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="@dimen/size_20dp"
+                    android:id="@+id/way_search_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/size_16sp"
+                    android:text="沿途搜索"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/size_20dp"
+                    android:layout_marginRight="@dimen/size_20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_64dp"
+                    android:id="@+id/way_search_layout"
+                    android:layout_below="@+id/way_search_title">
+                    <LinearLayout
+                        android:id="@+id/gas_layout"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/navi_setting_gastation"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black_85"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/size_5dp"
+                            android:text="加油站"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/size_2dp"
+                        android:layout_marginBottom="@dimen/size_2dp"
+                        android:background="@color/title_dividing_line"></LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/atm_layout"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/navi_setting_atm"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black_85"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/size_5dp"
+                            android:text="ATM"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/size_2dp"
+                        android:layout_marginBottom="@dimen/size_2dp"
+                        android:background="@color/title_dividing_line"></LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/maintenance_layout"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/navi_setting_maintance"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black_85"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/size_5dp"
+                            android:text="维修站"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/size_2dp"
+                        android:layout_marginBottom="@dimen/size_2dp"
+                        android:background="@color/title_dividing_line"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/wc_layout"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/navi_setting_wc"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black_85"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/size_5dp"
+                            android:text="洗手间"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:layout_height="1px"
+                    android:orientation="vertical"
+                    android:background="@color/title_dividing_line"
+                    android:layout_below="@+id/way_search_layout"
+                    android:id="@+id/diver1"></LinearLayout>
+                <TextView
+                    android:layout_marginLeft="@dimen/size_20dp"
+                    android:layout_below="@+id/diver1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prefer_title"
+                    android:layout_marginTop="@dimen/size_10sp"
+                    android:text="路线偏好"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_16sp"/>
+                <GridView
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_100dp"
+                    android:numColumns="4"
+                    android:id="@+id/strategy_list"
+                    android:layout_below="@+id/prefer_title"
+                    ></GridView>
+
+
+
+                <LinearLayout
+                    android:layout_below="@+id/strategy_list"
+                    android:id="@+id/navi_mode_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/size_20dp"
+                    android:layout_marginRight="@dimen/size_20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/size_16sp"
+                        android:textColor="@color/black"
+                        android:text="地图模式"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_30dp"
+                        android:layout_marginLeft="@dimen/size_55dp"
+                        android:padding="@dimen/size_1dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/navi_setting_close_bg"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/day_mode"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/size_30dp"
+                            android:gravity="center"
+                            android:background="@drawable/navi_setting_btn_selector"
+                            android:text="白天"
+                            android:textColor="@drawable/navi_setting_btn_text_color" />
+                        <Button
+                            android:id="@+id/night_mode"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/navi_setting_btn_selector"
+                            android:text="夜间"
+                            android:textColor="@drawable/navi_setting_btn_text_color" />
+                        <Button
+                            android:id="@+id/auto_mode"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/navi_setting_btn_selector"
+                            android:text="自动"
+                            android:textColor="@drawable/navi_setting_btn_text_color" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_below="@+id/navi_mode_layout"
+                    android:layout_width="match_parent"
+                    android:id="@+id/scale_layout"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_20dp"
+                    android:layout_marginRight="@dimen/size_20dp"
+                    android:layout_marginTop="@dimen/size_10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自动比例尺"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_16sp"/>
+                    <CheckBox
+                        android:id="@+id/scale_check"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/navi_set_checkbox"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:orientation="horizontal"
+                    android:background="@color/title_dividing_line"
+                    android:layout_marginTop="@dimen/size_10dp"></LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/navi_speak_layout"
+                    android:layout_below="@id/scale_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/size_20dp"
+                    android:layout_marginRight="@dimen/size_20dp"
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/size_16sp"
+                        android:textColor="@color/black"
+                        android:text="播报模式"
+                        android:layout_centerVertical="true"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@drawable/navi_setting_btn_selector"
+                        android:text="静音"
+                        android:textColor="@drawable/navi_setting_btn_text_color"
+                        android:layout_toLeftOf="@+id/speak_mode"
+                        android:layout_marginRight="@dimen/size_20dp"
+                        android:layout_centerVertical="true"/>
+                    <CheckBox
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/speak_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/navi_setting_btn_selector"
+                        style="@style/navi_set_checkbox"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/navi_speak_content_layout"
+                    android:layout_below="@+id/navi_speak_layout"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/eye"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_20dp"
+                        style="@style/DownloadCheckBox"
+                        android:text="电子眼提醒"
+                        android:textColor="@color/nav_setting_grey"
+                        android:layout_marginLeft="@dimen/size_50dp"
+                        android:paddingLeft="@dimen/size_10dp"
+                        android:textSize="@dimen/size_16sp"
+                        />
+                    <CheckBox
+                        android:id="@+id/traffic"
+                        android:layout_toRightOf="@id/eye"
+                        android:layout_alignBottom="@id/eye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/DownloadCheckBox"
+                        android:text="前方路况播报"
+                        android:textColor="@color/nav_setting_grey"
+                        android:layout_marginLeft="@dimen/size_50dp"
+                        android:paddingLeft="@dimen/size_10dp"
+                        android:textSize="@dimen/size_16sp"
+                        />
+                    <CheckBox
+                        android:id="@+id/navi"
+                        android:layout_below="@id/eye"
+                        android:layout_alignLeft="@id/eye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/DownloadCheckBox"
+                        android:text="导航信息播报"
+                        android:layout_marginTop="@dimen/size_20dp"
+                        android:textColor="@color/nav_setting_grey"
+                        android:paddingLeft="@dimen/size_10dp"
+                        android:textSize="@dimen/size_16sp"
+                        />
+                </RelativeLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+        <TextView
+            android:id="@+id/ok"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_width="@dimen/size_180dp"
+            android:layout_height="@dimen/size_40dp"
+            android:background="@drawable/navi_btn_bg"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="确定"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16sp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

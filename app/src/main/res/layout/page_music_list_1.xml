@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:background="@color/transparent_5"
+        android:layout_height="48dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/album_name"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/transparent_85"
+            android:textSize="@dimen/size_16sp"
+            android:textStyle="bold"
+            android:text="@string/play_list"
+            android:visibility="visible"/>
+        <TextView
+            android:background="@drawable/album_eidt_custom_selector"
+            android:layout_marginLeft="@dimen/size_60dp"
+            android:layout_width="@dimen/size_80dp"
+            android:layout_height="@dimen/size_30dp"
+
+            android:id="@+id/clear_history"
+            android:text="@string/clear_history"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:textColor="@color/transparent_60"
+            android:textSize="@dimen/size_16sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+
+    <ListView
+        android:layout_below="@+id/title"
+        android:paddingLeft="@dimen/size_60dp"
+        android:paddingRight="@dimen/size_60dp"
+        android:id="@+id/radio_album_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@color/transparent_30"
+        android:scrollbarSize="@dimen/size_2dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:listSelector="@drawable/music_list_selector"
+        />
+
+</RelativeLayout>

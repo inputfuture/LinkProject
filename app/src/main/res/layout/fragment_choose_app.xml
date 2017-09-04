@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/ll_title"
+    android:orientation="vertical"
+    android:layout_above="@+id/choose_app_contain"
+   >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:background="@color/transparent_5">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_8dp"
+            android:layout_marginRight="@dimen/size_8dp"
+            android:scaleType="center"
+            android:background="@drawable/button_circle_selector"
+            android:src="@mipmap/back_icon" />
+
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/size_5dp"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:background="@color/transparent_30" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/size_18sp"
+            android:textColor="@color/white"
+            android:text="@string/choose_app_title" />
+        <Button
+            android:gravity="center"
+            android:layout_width="@dimen/size_70dp"
+            android:layout_height="@dimen/size_36dp"
+            android:id="@+id/btn_sure"
+            android:text="@string/ok"
+            android:background="@drawable/button_rantage_selector"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_20dp"
+            />
+    </RelativeLayout>
+
+    <GridView
+        android:layout_marginLeft="@dimen/size_30dp"
+        android:layout_marginRight="@dimen/size_30dp"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:verticalSpacing="@dimen/size_20dp"
+        android:scrollbars="vertical"
+        android:listSelector="@color/transparent"
+        android:scrollbarThumbVertical="@color/transparent_30"
+        android:scrollbarSize="@dimen/size_2dp"
+        android:scrollbarStyle="outsideOverlay"
+
+        android:horizontalSpacing="@dimen/size_20dp"
+        android:numColumns="4">
+    </GridView>
+</LinearLayout>

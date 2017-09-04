@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.letv.leauto.ecolink.ui.fragment.NewAlbumFragment">
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48dp"
+        android:background="@color/transparent_5">
+        <ImageButton
+            android:layout_marginLeft="@dimen/size_4dp"
+            android:padding="@dimen/size_14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_circle_selector"
+            android:src="@mipmap/back_icon"/>
+        <LinearLayout
+            android:layout_toRightOf="@+id/back"
+            android:layout_width="@dimen/size_1dp"
+            android:layout_height="@dimen/size_38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_4dp"
+            android:background="@color/transparent_5">
+
+        </LinearLayout>
+        <TextView
+            android:clickable="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/album_name"
+            android:textSize="@dimen/textsize_16sp"
+            android:textStyle="bold"
+            android:text="新建歌单"/>
+
+        <Button
+            android:layout_marginRight="@dimen/size_10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/complete"
+            android:textSize="@dimen/size_16sp"
+            android:textColor="@color/transparent_60"
+            android:id="@+id/complete"
+            android:background="@drawable/button_rantage_selector"/>
+
+
+    </RelativeLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:layout_below="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_height="@dimen/size_40dp"
+        android:id="@+id/new_album"
+        android:paddingLeft="@dimen/size_5dp"
+        android:textSize="@dimen/textsize_16sp"
+        android:textColor="@color/transparent_60"
+        android:dropDownVerticalOffset="@dimen/size_20dp"
+        android:dropDownWidth="fill_parent"
+        android:focusable="true"
+        android:cursorVisible="true"
+        android:singleLine="true"
+        android:imeOptions="flagNoExtractUi"
+        android:background="@color/transparent_20"
+        android:hint="@string/local_album_name"
+        android:textColorHint="@color/transparent_30"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:maxLength="48"
+        />
+
+</RelativeLayout>
