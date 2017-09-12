@@ -1883,7 +1883,7 @@ public class HomeActivity extends StateTitleActivity implements DeleteDataDialog
 
     public void ChangeToLeradio() {
         Trace.Debug("MusicFragment", "ChangeToLeradio");
-        setNavibar();
+        /*setNavibar();
         naviBackground();
         frameLayout_music.setVisibility(View.VISIBLE);
         iv_music.setImageResource(R.mipmap.button_radio_sel);
@@ -1917,7 +1917,7 @@ public class HomeActivity extends StateTitleActivity implements DeleteDataDialog
             } else {
                 leRadioAlumFragment.refreshView(this);
             }
-        }
+        }*/
 
     }
 

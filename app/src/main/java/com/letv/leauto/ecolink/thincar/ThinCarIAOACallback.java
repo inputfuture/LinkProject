@@ -709,9 +709,21 @@ public class ThinCarIAOACallback implements IAOACallback {
                 }, 500);
                 break;
             case ThinCarDefine.ProtocolFromCarAction.SHOW_LERADIO://音乐界面
-                mIsSwitchMap = false;
-                startHomeActivity();
-                mContext.ChangeToLeradio();
+//                mIsSwitchMap = false;
+//                startHomeActivity();
+//                mContext.ChangeToLeradio();
+
+                GlobalCfg.IS_THIRD_APP_STATE = true;
+                GlobalCfg.isCarResumed = false;
+
+                String packageName = "com.hongfans.rearview";
+                Intent intent = mContext.getApplicationContext().getPackageManager().getLaunchIntentForPackage(packageName);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                mContext.getApplicationContext().startActivity(intent);
+
+                if (!GlobalCfg.IS_POTRAIT && GlobalCfg.CAR_IS_lAND) {
+                    ScreenRotationUtil.startLandService(mContext,packageName);
+                }
                 break;
             case ThinCarDefine.ProtocolFromCarAction.SHOW_SPEECH:
                 mContext.startVoiceSearch();
